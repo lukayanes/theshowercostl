@@ -317,8 +317,8 @@ a{
   z-index: 0;
 
   background:
-    linear-gradient(var(---overlay), var(---overlay)),
-    url("./assets/herotest.webp") center / cover no-repeat;
+    linear-gradient(var(--hero-overlay), var(--hero-overlay)),
+    url("./assets/herotest2.webp") center / cover no-repeat;
 
   transform: scale(1.18);
   transition: transform 1100ms cubic-bezier(.2,.9,.2,1);
