@@ -1845,3 +1845,100 @@ select,
   position: relative;
   z-index: 2;
 }
+
+/* ===============================
+   TRUST STRIP
+================================ */
+
+.trust-strip{
+
+  background:#efefef;
+  padding:42px 0;
+
+}
+
+.trust-inner{
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:40px;
+
+}
+
+/* Individual items */
+
+.trust-item{
+
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  gap:8px;
+
+}
+
+/* Images */
+
+.trust-item img{
+
+  height:70px;
+  width:auto;
+  object-fit:contain;
+
+}
+
+/* Google slightly larger */
+
+.trust-item.google img{
+
+  height:85px;
+
+}
+
+/* BBB slightly smaller */
+
+.trust-item.bbb img{
+
+  height:65px;
+
+}
+
+/* Text */
+
+.trust-item span{
+
+  font-size:14px;
+  font-weight:600;
+  color:#444;
+
+}
+
+/* Mobile */
+
+@media(max-width:900px){
+
+  .trust-inner{
+
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+
+  }
+
+  .trust-item img{
+
+    height:55px;
+
+  }
+
+}
+
+
+.trust-item{
+ transition:transform .25s ease;
+}
+
+.trust-item:hover{
+ transform:translateY(-4px);
+}
