@@ -14,6 +14,7 @@
   --gray: #efefef;
   --gray-deep: #071427;
   --purple: #4C3494;
+  --white: #ffffff;
 
 
   /* matches your current “top:56px” behavior */
@@ -710,7 +711,7 @@ html.is-loaded .hero-sub{
 ================================ */
 .about-split{
   padding: 80px 0;
-  background: var(--gray);
+  background: var(--white);
 }
 
 .about-split-grid{
@@ -1977,4 +1978,25 @@ select,
 
 .about-body:last-child{
   margin-bottom: 0;
+}
+
+.about-title{
+  font-size: clamp(28px, 3vw, 40px);
+  line-height: 1.15;
+  font-weight: 800;
+  color: #111111;   /* professional black */
+  margin: 0 0 18px;
+}
+
+.about-body{
+  color: #333333;   /* softer professional black */
+  line-height: 1.75;
+  font-size: 15.5px;
+  max-width: 520px;
+  margin: 0;
+}
+
+/* spacing between paragraphs */
+.about-body + .about-body{
+  margin-top: 18px;
 }
