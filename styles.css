@@ -13,7 +13,7 @@
 
   --navy: #0b1f33;
   --navy-deep: #071427;
-  --orange: #5FAFB0;
+  --purple: #4C3494;
 
 
   /* matches your current “top:56px” behavior */
@@ -63,7 +63,7 @@ a{
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 10000;
-  background: var(--orange);
+  background: var(--);
 }
 
 .top-contact-inner{
@@ -559,7 +559,7 @@ html.is-loaded .hero-sub{
   transition: color 0.15s ease;
 }
 
-.biz-pan-kicker a:hover{ color: var(--orange); }
+.biz-pan-kicker a:hover{ color: var(--purple); }
 
 .biz-pan-title{
   text-align: left;
@@ -580,7 +580,7 @@ html.is-loaded .hero-sub{
 .about-underline{
   width: 44px;
   height: 3px;
-  background: var(--orange);
+  background: var(--purple);
   border-radius: 999px;
   margin: 0 0 22px;
 }
@@ -730,7 +730,7 @@ html.is-loaded .hero-sub{
   letter-spacing: 0.08em;
   font-size: 12px;
   text-transform: uppercase;
-  color: var(--orange);
+  color: var(--purple);
 }
 
 .about-link:hover{
@@ -915,7 +915,7 @@ html.is-loaded .hero-sub{
   font-size: clamp(22px, 2.2vw, 34px);
 }
 
-.last-cta-panel h2 .cta-orange{ color: var(--orange); }
+.last-cta-panel h2 .cta-purple{ color: var(--purple); }
 
 .last-cta-sub{
   margin: 0 0 18px;
@@ -930,7 +930,7 @@ html.is-loaded .hero-sub{
   width: 44px;
   height: 3px;
   border-radius: 999px;
-  background: var(--orange);
+  background: var(--purple);
   margin: 0 0 22px;
 }
 
@@ -953,7 +953,7 @@ html.is-loaded .hero-sub{
 }
 
 .last-cta-phone:hover{
-  color: var(--orange);
+  color: var(--purple);
   text-decoration: underline;
 }
 
@@ -1018,7 +1018,7 @@ html.is-loaded .hero-sub{
 }
 
 .site-footer a:hover{
-  color: var(--orange);
+  color: var(--purple);
   text-decoration: underline;
 }
 
@@ -1320,7 +1320,7 @@ html.is-loaded .hero-sub{
 
 
 /* =========================
-   MOBILE: single slim orange contact bar
+   MOBILE: single slim purple contact bar
    (desktop untouched)
    ========================= */
 @media (max-width: 768px){
@@ -1471,11 +1471,11 @@ select,
 }
 
 .copyright-bar a:hover {
-  color: var(--orange); /* same orange as contact links */
+  color: var(--purple); /* same purple as contact links */
 }
 
 .site-footer a:hover {
-  color: var(--orange);
+  color: var(--purple);
 }
 
 /* ===============================
