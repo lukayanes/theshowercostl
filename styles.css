@@ -1968,3 +1968,13 @@ select,
   height:100%;
 
 }
+
+/* SPACE BETWEEN ABOUT PARAGRAPHS */
+
+.about-body{
+  margin-bottom: 18px;
+}
+
+.about-body:last-child{
+  margin-bottom: 0;
+}
