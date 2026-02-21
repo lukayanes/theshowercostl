@@ -13,7 +13,7 @@
 
   --navy: #0b1f33;
   --navy-deep: #071427;
-  --purple: #4C3494;
+  --orange: #5FAFB0;
 
 
   /* matches your current “top:56px” behavior */
@@ -63,7 +63,7 @@ a{
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 10000;
-  background: var(--purple);
+  background: var(--orange);
 }
 
 .top-contact-inner{
@@ -299,9 +299,9 @@ a{
 }
 
 /* ===============================
-    (background + zoom + split)
+   HERO (background + zoom + split)
 ================================ */
-.top-{
+.top-hero{
   min-height: 92vh;
   position: relative;
   overflow: hidden;
@@ -310,7 +310,7 @@ a{
 
 
 /* Zoom ONLY the background (not the nav/text) */
-.top-::before{
+.top-hero::before{
   content:"";
   position: absolute;
   inset: 0;
@@ -318,7 +318,7 @@ a{
 
   background:
     linear-gradient(var(--hero-overlay), var(--hero-overlay)),
-    url("./assets/herotest2.webp") center / cover no-repeat;
+    url("./assets/flmanhero3.webp") center / cover no-repeat;
 
   transform: scale(1.18);
   transition: transform 1100ms cubic-bezier(.2,.9,.2,1);
@@ -559,7 +559,7 @@ html.is-loaded .hero-sub{
   transition: color 0.15s ease;
 }
 
-.biz-pan-kicker a:hover{ color: var(--purple); }
+.biz-pan-kicker a:hover{ color: var(--orange); }
 
 .biz-pan-title{
   text-align: left;
@@ -580,7 +580,7 @@ html.is-loaded .hero-sub{
 .about-underline{
   width: 44px;
   height: 3px;
-  background: var(--purple);
+  background: var(--orange);
   border-radius: 999px;
   margin: 0 0 22px;
 }
@@ -730,7 +730,7 @@ html.is-loaded .hero-sub{
   letter-spacing: 0.08em;
   font-size: 12px;
   text-transform: uppercase;
-  color: var(--purple);
+  color: var(--orange);
 }
 
 .about-link:hover{
@@ -915,7 +915,7 @@ html.is-loaded .hero-sub{
   font-size: clamp(22px, 2.2vw, 34px);
 }
 
-.last-cta-panel h2 .cta-purple{ color: var(--purple); }
+.last-cta-panel h2 .cta-orange{ color: var(--orange); }
 
 .last-cta-sub{
   margin: 0 0 18px;
@@ -930,7 +930,7 @@ html.is-loaded .hero-sub{
   width: 44px;
   height: 3px;
   border-radius: 999px;
-  background: var(--purple);
+  background: var(--orange);
   margin: 0 0 22px;
 }
 
@@ -953,7 +953,7 @@ html.is-loaded .hero-sub{
 }
 
 .last-cta-phone:hover{
-  color: var(--purple);
+  color: var(--orange);
   text-decoration: underline;
 }
 
@@ -1018,7 +1018,7 @@ html.is-loaded .hero-sub{
 }
 
 .site-footer a:hover{
-  color: var(--purple);
+  color: var(--orange);
   text-decoration: underline;
 }
 
@@ -1320,7 +1320,7 @@ html.is-loaded .hero-sub{
 
 
 /* =========================
-   MOBILE: single slim purple contact bar
+   MOBILE: single slim orange contact bar
    (desktop untouched)
    ========================= */
 @media (max-width: 768px){
@@ -1471,11 +1471,11 @@ select,
 }
 
 .copyright-bar a:hover {
-  color: var(--purple); /* same purple as contact links */
+  color: var(--orange); /* same orange as contact links */
 }
 
 .site-footer a:hover {
-  color: var(--purple);
+  color: var(--orange);
 }
 
 /* ===============================
@@ -1811,15 +1811,15 @@ select,
   z-index: 2;
 }
 
-/* Isolate form card from  background */
-.-form-card{
+/* Isolate form card from hero background */
+.hero-form-card{
   position: relative;
   isolation: isolate;
   z-index: 1;
 }
 
 /* iframe stays contained */
-.-form-card iframe{
+.hero-form-card iframe{
   position: relative;
   z-index: 1;
   width: 100%;
@@ -1831,14 +1831,14 @@ select,
    Remove backdrop-filter from iframe container
 ========================================= */
 
-.-form-card{
+.hero-form-card{
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
   background: rgba(255,255,255,0.14); /* visually identical fallback */
 }
 
 /* =========================================
-    TEXT — FORCE ABOVE BACKGROUND
+   HERO TEXT — FORCE ABOVE BACKGROUND
 ========================================= */
 
 .hero-content{
