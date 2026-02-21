@@ -11,8 +11,8 @@
   --nav-text: rgba(0,0,0,0.85);
   --nav-text-strong: #4C3494;
 
-  --navy: #0b1f33;
-  --navy-deep: #071427;
+  --gray: #efefef;
+  --gray-deep: #071427;
   --purple: #4C3494;
 
 
@@ -550,7 +550,7 @@ html.is-loaded .hero-sub{
   letter-spacing: 0.6px;
   text-transform: uppercase;
   font-size: 15px;
-  color: var(--navy);
+  color: var(--gray);
 }
 
 .biz-pan-kicker a{
@@ -710,7 +710,7 @@ html.is-loaded .hero-sub{
 ================================ */
 .about-split{
   padding: 80px 0;
-  background: var(--navy);
+  background: var(--gray);
 }
 
 .about-split-grid{
@@ -788,7 +788,7 @@ html.is-loaded .hero-sub{
   letter-spacing: 0.08em;
   text-transform: uppercase;
   font-size: clamp(18px, 2.4vw, 26px);
-  color: var(--navy);
+  color: var(--gray);
 }
 
 .mfr-logos{
@@ -907,7 +907,7 @@ html.is-loaded .hero-sub{
 
 .last-cta-panel h2{
   margin: 0 0 18px;
-  color: var(--navy);
+  color: var(--gray);
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.03em;
@@ -946,7 +946,7 @@ html.is-loaded .hero-sub{
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  color: var(--navy);
+  color: var(--gray);
   font-weight: 900;
   font-size: 20px;
   margin-top: 6px;
@@ -966,7 +966,7 @@ html.is-loaded .hero-sub{
    FOOTER
 ================================ */
 .site-footer{
-  background: var(--navy-deep);
+  background: var(--gray-deep);
   color: #fff;
   padding: 70px 0 0;
 }
@@ -1039,7 +1039,7 @@ html.is-loaded .hero-sub{
 
 /* Copyright bar (same bg as footer) */
 .copyright-bar{
-  background: var(--navy-deep);
+  background: var(--gray-deep);
   margin: 0;
   padding: 16px 0 0;
   text-align: center;
@@ -1563,9 +1563,9 @@ select,
   margin-top: clamp(80px, 10vw, 140px);
 }
 
-/* force navy title color */
+/* force gray title color */
 .projects-showcase .about-title{
-  color: var(--navy, #0b1f33);
+  color: var(--gray, #0b1f33);
 }
 
 /* ===============================
@@ -1603,7 +1603,7 @@ select,
   font-size: 12px;
   letter-spacing: 0.15em;
   font-weight: 700;
-  color: var(--navy, #0b1f33);
+  color: var(--gray, #0b1f33);
 }
 
 .how-step h3{
@@ -1749,9 +1749,9 @@ select,
   }
 }
 
-/* HOW IT WORKS — NAVY TITLE */
+/* HOW IT WORKS — gray TITLE */
 .how-it-works .about-title{
-  color: var(--navy);
+  color: var(--gray);
 }
 
 @media (max-width: 900px){
