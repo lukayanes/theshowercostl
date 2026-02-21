@@ -299,9 +299,9 @@ a{
 }
 
 /* ===============================
-   HERO (background + zoom + split)
+    (background + zoom + split)
 ================================ */
-.top-hero{
+.top-{
   min-height: 92vh;
   position: relative;
   overflow: hidden;
@@ -310,15 +310,15 @@ a{
 
 
 /* Zoom ONLY the background (not the nav/text) */
-.top-hero::before{
+.top-::before{
   content:"";
   position: absolute;
   inset: 0;
   z-index: 0;
 
   background:
-    linear-gradient(var(--hero-overlay), var(--hero-overlay)),
-    url("./assets/herotest.webp") center / cover no-repeat;
+    linear-gradient(var(---overlay), var(---overlay)),
+    url("./assets/herotest2.webp") center / cover no-repeat;
 
   transform: scale(1.18);
   transition: transform 1100ms cubic-bezier(.2,.9,.2,1);
@@ -1811,15 +1811,15 @@ select,
   z-index: 2;
 }
 
-/* Isolate form card from hero background */
-.hero-form-card{
+/* Isolate form card from  background */
+.-form-card{
   position: relative;
   isolation: isolate;
   z-index: 1;
 }
 
 /* iframe stays contained */
-.hero-form-card iframe{
+.-form-card iframe{
   position: relative;
   z-index: 1;
   width: 100%;
@@ -1831,14 +1831,14 @@ select,
    Remove backdrop-filter from iframe container
 ========================================= */
 
-.hero-form-card{
+.-form-card{
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
   background: rgba(255,255,255,0.14); /* visually identical fallback */
 }
 
 /* =========================================
-   HERO TEXT — FORCE ABOVE BACKGROUND
+    TEXT — FORCE ABOVE BACKGROUND
 ========================================= */
 
 .hero-content{
