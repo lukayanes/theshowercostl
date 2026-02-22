@@ -1017,47 +1017,87 @@ html.is-loaded .hero-sub{
 }
 
 /* ===============================
-   FOOTER
+   FOOTER (The Shower Co)
 ================================ */
-.site-footer{
-  background: var(--purple);
-  color: #fff;
-  padding: 70px 0 0;
+
+/* Set this to the EXACT promo strip light blue if different */
+:root{
+  --promo-blue: #5FAFB0;
+  --footer-purple: var(--purple, #2a2140);
 }
 
-/* ===============================
-   FOOTER — 4 COLUMN LAYOUT
-================================ */
+.site-footer{
+  background: var(--footer-purple);
+  color: #fff;
+  padding: 86px 0 0;
+}
+
+/* 5 columns: brand + 3 nav + locations */
 .footer-grid{
   display: grid;
-  grid-template-columns: 1.4fr 1fr 1fr 1fr; /* brand + 3 equal columns */
-  gap: 46px;
+  grid-template-columns: 1.7fr 1fr 1fr 1fr 1.15fr;
+  gap: 72px; /* more space between logo and columns */
   align-items: start;
 }
 
-
-.footer-brand-row{
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
+.footer-col{
   min-width: 0;
 }
 
-.footer-logo{
-  width: auto;
-  height: 100px;
-  flex: 0 0 86px;
-  display: block;
-  object-fit: contain;
+.footer-brand{
+  padding-right: 12px;
 }
 
+.footer-logo{
+  height: 92px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  margin-bottom: 18px;
+}
+
+/* SOCIAL ICONS (CIRCLES) */
+.footer-social{
+  display: flex;
+  gap: 12px;
+  margin: 10px 0 22px;
+  flex-wrap: wrap;
+}
+
+.footer-social a{
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.14);
+  border: 1px solid rgba(255,255,255,0.16);
+  transition: transform .18s ease, background .18s ease, border-color .18s ease;
+  text-decoration: none;
+}
+
+.footer-social a:hover{
+  background: rgba(255,255,255,0.22);
+  border-color: rgba(255,255,255,0.28);
+  transform: translateY(-1px);
+}
+
+.footer-social svg{
+  width: 18px;
+  height: 18px;
+  fill: #fff;
+}
+
+/* TEXT */
 .footer-text{
   margin: 0;
-  color: rgba(255,255,255,0.85);
+  color: rgba(255,255,255,0.82);
   line-height: 1.7;
   font-size: 14px;
 }
 
+/* HEADERS */
 .site-footer h3{
   margin: 0 0 14px;
   font-size: 14px;
@@ -1067,35 +1107,46 @@ html.is-loaded .hero-sub{
   color: #fff;
 }
 
+/* LINKS LIST */
+.footer-links{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-links li{
+  margin: 0 0 10px;
+}
+
 .site-footer a{
-  color: rgba(255,255,255,0.85);
+  color: rgba(255,255,255,0.86);
+  text-decoration: none;
+  transition: color .2s ease, opacity .2s ease;
 }
 
 .site-footer a:hover{
-  color: var(--purple);
+  color: var(--promo-blue); /* hover should be light blue */
   text-decoration: underline;
 }
 
-@media (max-width: 700px){
-  .footer-grid{
-    grid-template-columns: 1fr;
-    gap: 34px;
-  }
-  .footer-brand-row{
-    flex-direction: column;
-    gap: 12px;
-  }
-  .footer-logo{
-    width: 150px;
-    flex: 0 0 auto;
-  }
+/* LOCATIONS */
+.footer-address{
+  max-width: 320px;
 }
 
-/* Copyright bar (same bg as footer) */
+.footer-location + .footer-location{
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255,255,255,0.14);
+}
+
+/* ===============================
+   COPYRIGHT BAR (MATCH PROMO BLUE)
+================================ */
 .copyright-bar{
-  background: var(--gray-deep);
-  margin: 0;
-  padding: 16px 0 0;
+  background: var(--promo-blue);
+  margin: 58px 0 0;
+  padding: 18px 0;
   text-align: center;
 }
 
@@ -1106,6 +1157,43 @@ html.is-loaded .hero-sub{
   letter-spacing: 0.06em;
   text-transform: uppercase;
   font-weight: 700;
+}
+
+.copyright-bar a{
+  color: #fff;
+  text-decoration: none;
+  transition: color .2s ease, background .2s ease;
+}
+
+.copyright-bar a:hover{
+  color: var(--promo-blue);
+  background: #fff;
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 980px){
+  .footer-grid{
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+  }
+  .footer-brand{
+    grid-column: 1 / -1;
+    padding-right: 0;
+  }
+  .footer-address{
+    grid-column: 1 / -1;
+    max-width: none;
+  }
+}
+
+@media (max-width: 600px){
+  .footer-grid{
+    grid-template-columns: 1fr;
+  }
 }
 
 /* =========================================================
