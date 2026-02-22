@@ -2053,7 +2053,7 @@ select,
   left: -120px;       /* less intrusive */
   transform: rotate(-25deg);
 
-  padding: 10px 110px 10px 90px;
+  padding: 10px 90px 10px 110px;
   background: linear-gradient(135deg,#38bdf8,#0ea5e9);
   color:#fff;
   box-shadow: 0 12px 24px rgba(0,0,0,.35);
