@@ -186,7 +186,7 @@ a{
 .nav-left a:hover,
 .nav-right a:hover,
 .nav-dropbtn:hover{
-  color: var(--nav-text-strong);
+  color: var(--white);
 }
 
 .nav-logo{
