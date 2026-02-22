@@ -2377,3 +2377,8 @@ html, body{
   border-radius: 999px;
   margin: 0 0 22px;
 }
+
+.last-cta-panel .nav-cta{
+  margin-top: 10px;
+  align-self: flex-start;
+}
