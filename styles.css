@@ -2348,3 +2348,24 @@ GOOGLE REVIEWS SECTION
   box-shadow: 0 30px 80px rgba(0,0,0,0.35);
 }
 
+/* Fix Elfsight floating badge spacing */
+.elfsight-app-15d89383-6600-46cf-a22a-569d1919fff0{
+  position: fixed !important;
+}
+
+/* Prevent horizontal scrollbar */
+body{
+  overflow-x: hidden;
+}
+
+/* Remove bottom white gap */
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
+/* Prevent Elfsight container from affecting layout */
+[class*="elfsight-app"]{
+  display: block;
+  line-height: 0;
+}
