@@ -177,7 +177,7 @@ a{
 .nav-left{ justify-content: flex-end; }
 
 .nav-right{
-  justify-content: flex-start;
+  justify-content: flex-end;
   min-width: 0;
 }
 
