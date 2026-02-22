@@ -2022,8 +2022,8 @@ select,
    FOOTER — SHOWER CO (COMPACT + ONE LINE)
 ================================ */
 :root{
-  --promo-blue:#5FAFB0;                 /* promo strip light blue */
-  --footer-purple: var(--purple,#2a2140);
+  --promo-blue: linear-gradient(135deg,#38bdf8,#0ea5e9);                 /* promo strip light blue */
+  --footer-purple: var(--purple);
 }
 
 .site-footer{
@@ -2136,10 +2136,32 @@ select,
 .footer-address a{ white-space:nowrap; }
 
 /* make the long locations column scroll internally if needed */
-.footer-locations .footer-links{
-  max-height: 240px;
-  overflow:auto;
-  padding-right:6px;
+/* TALLER FOOTER */
+
+.site-footer{
+
+background: var(--footer-purple);
+
+padding: 70px 0 0;   /* increased from 46px */
+
+}
+
+
+/* more breathing room between links */
+
+.footer-links li{
+
+margin-bottom: 8px;
+
+}
+
+
+/* slightly taller line spacing */
+
+.footer-text{
+
+line-height: 1.7;
+
 }
 
 /* subtle scrollbar (optional) */
