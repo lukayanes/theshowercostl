@@ -2148,3 +2148,33 @@ border-radius:0;
   .site-footer{ overflow-x:auto; }
   .footer-grid{ min-width: 1200px; }   /* keeps single row; scrolls instead */
 }
+
+/* ===============================
+   SERVICES TITLE — CENTER + SPACING
+================================ */
+
+/* center the title block */
+.biz-pan .about-kicker,
+.biz-pan .about-title,
+.biz-pan .about-body,
+.biz-pan .about-underline{
+
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+
+}
+
+/* control max width so it looks clean */
+.biz-pan .about-body{
+
+  max-width:700px;
+
+}
+
+/* ADD SPACE between title and panels */
+.biz-wrap{
+
+  margin-top:60px;
+
+}
