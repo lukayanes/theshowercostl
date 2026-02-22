@@ -2000,3 +2000,38 @@ select,
 .about-body + .about-body{
   margin-top: 18px;
 }
+
+/* FIX ADDRESS FIELD FONT */
+
+#address-input,
+#address-input::placeholder,
+.quote-form input,
+.quote-form textarea {
+
+  font-family: "Karla", Arial, sans-serif !important;
+  text-transform: none !important;
+  letter-spacing: normal !important;
+
+}
+
+
+/* FIX GOOGLE AUTOCOMPLETE DROPDOWN */
+
+.pac-container,
+.pac-item,
+.pac-item span {
+
+  font-family: "Karla", Arial, sans-serif !important;
+  text-transform: none !important;
+  letter-spacing: normal !important;
+
+}
+
+
+/* KEEP DROPDOWN ABOVE FORM */
+
+.pac-container {
+
+  z-index: 99999 !important;
+
+}
