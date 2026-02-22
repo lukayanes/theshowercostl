@@ -180,6 +180,25 @@ a{
   min-width: 0;
 }
 
+.nav-right .nav-cta{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 16px;
+  border-radius: 10px;
+
+  background: #4C3494;
+  color: #ffffff !important;
+
+  font-family: "Unica One", system-ui;
+  font-size: 22px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  white-space: nowrap;
+  flex-shrink: 0;
+}
 .nav-left a,
 .nav-right a,
 .nav-dropbtn{
@@ -195,6 +214,8 @@ a{
 .nav-dropbtn:hover{
   color: var(--white);
 }
+
+
 
 .nav-logo{
   display: flex;
