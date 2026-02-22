@@ -2851,3 +2851,14 @@ html, body{
   }
 
 }
+
+/* =========================================
+   HIDE PROMO RIBBON ON MOBILE ONLY
+========================================= */
+@media (max-width:768px){
+
+  .promo-corner{
+    display: none !important;
+  }
+
+}
