@@ -2054,7 +2054,7 @@ select,
 
 /* logo */
 .footer-logo{
-  height:64px;
+  height:100px;
   width:auto;
   display:block;
   object-fit:contain;
