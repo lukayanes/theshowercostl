@@ -2050,10 +2050,10 @@ select,
 .promo-corner{
   position: absolute;
   top: 60px;          /* higher */
-  left: -95px;       /* less intrusive */
+  left: -140px;       /* less intrusive */
   transform: rotate(-25deg);
 
-  padding: 14px 160px; /* smaller */
+  padding: 10px 140px 10px 60px;
   background: linear-gradient(135deg,#38bdf8,#0ea5e9);
   color:#fff;
   box-shadow: 0 12px 24px rgba(0,0,0,.35);
