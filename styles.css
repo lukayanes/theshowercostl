@@ -1016,215 +1016,9 @@ html.is-loaded .hero-sub{
   .last-cta-panel{ padding: 50px 22px; }
 }
 
-/* ===============================
-   FOOTER (The Shower Co)
-================================ */
 
-/* Set this to the EXACT promo strip light blue if different */
-:root{
-  --promo-blue: #5FAFB0;
-  --footer-purple: var(--purple, #2a2140);
-}
 
-.site-footer{
-  background: var(--footer-purple);
-  color: #fff;
-  padding: 86px 0 0;
-}
 
-/* 5 columns: brand + 3 nav + locations */
-.footer-grid{
-  display: grid;
-  grid-template-columns: 1.7fr 1fr 1fr 1fr 1.15fr;
-  gap: 72px; /* more space between logo and columns */
-  align-items: start;
-}
-
-.footer-col{
-  min-width: 0;
-}
-
-.footer-brand{
-  padding-right: 12px;
-}
-
-.footer-logo{
-  height: 92px;
-  width: auto;
-  display: block;
-  object-fit: contain;
-  margin-bottom: 18px;
-}
-
-/* SOCIAL ICONS (CIRCLES) */
-.footer-social{
-  display: flex;
-  gap: 12px;
-  margin: 10px 0 22px;
-  flex-wrap: wrap;
-}
-
-.footer-social a{
-  width: 40px;
-  height: 40px;
-  border-radius: 999px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(255,255,255,0.14);
-  border: 1px solid rgba(255,255,255,0.16);
-  transition: transform .18s ease, background .18s ease, border-color .18s ease;
-  text-decoration: none;
-}
-
-.footer-social a:hover{
-  background: rgba(255,255,255,0.22);
-  border-color: rgba(255,255,255,0.28);
-  transform: translateY(-1px);
-}
-
-.footer-social svg{
-  width: 18px;
-  height: 18px;
-  fill: #fff;
-}
-
-/* TEXT */
-.footer-text{
-  margin: 0;
-  color: rgba(255,255,255,0.82);
-  line-height: 1.7;
-  font-size: 14px;
-}
-
-/* HEADERS */
-.site-footer h3{
-  margin: 0 0 14px;
-  font-size: 14px;
-  font-weight: 900;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #fff;
-}
-
-/* LINKS LIST */
-.footer-links{
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.footer-links li{
-  margin: 0 0 10px;
-}
-
-.site-footer a{
-  color: rgba(255,255,255,0.86);
-  text-decoration: none;
-  transition: color .2s ease, opacity .2s ease;
-}
-
-.site-footer a:hover{
-  color: var(--promo-blue); /* hover should be light blue */
-  text-decoration: underline;
-}
-
-/* LOCATIONS */
-.footer-address{
-  max-width: 320px;
-}
-
-.footer-location + .footer-location{
-  margin-top: 18px;
-  padding-top: 18px;
-  border-top: 1px solid rgba(255,255,255,0.14);
-}
-
-/* ===============================
-   COPYRIGHT BAR — PROMO BLUE (FIXED)
-================================ */
-
-/* Use your promo strip color here */
-:root{
-  --promo-blue:#5FAFB0;
-}
-
-/* Kill the mystery white strip + force correct color */
-.copyright-bar{
-  background: var(--promo-blue) !important;
-  margin: 0 !important;
-  padding: 18px 0 !important;
-  border: 0 !important;
-  box-shadow: none !important;
-  position: relative;
-}
-
-/* If something is inserting a white top border/spacing, this nukes it */
-.copyright-bar::before{
-  content:"";
-  display:block;
-  height:0;
-}
-
-/* Remove bottom spacing on the footer that can reveal the page background (white) */
-.site-footer{
-  margin: 0 !important;
-  padding-bottom: 0 !important;
-}
-
-/* Prevent margin-collapse / random gaps between footer and next section */
-.site-footer + .copyright-bar{
-  margin-top: 0 !important;
-}
-
-/* Text */
-.copyright-bar p{
-  margin: 0 !important;
-  color: #fff !important;
-  font-size: 12px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-/* Links */
-.copyright-bar a{
-  color: #fff !important;
-  text-decoration: none;
-  transition: color .2s ease, background .2s ease;
-}
-
-/* Hover: words turn light blue (promo blue) */
-.copyright-bar a:hover{
-  color: var(--promo-blue) !important;
-  background: #fff;
-  padding: 2px 6px;
-  border-radius: 6px;
-}
-
-/* ===============================
-   RESPONSIVE
-================================ */
-@media (max-width: 980px){
-  .footer-grid{
-    grid-template-columns: 1fr 1fr;
-    gap: 36px;
-  }
-  .footer-brand{
-    grid-column: 1 / -1;
-    padding-right: 0;
-  }
-  .footer-address{
-    grid-column: 1 / -1;
-    max-width: none;
-  }
-}
-
-@media (max-width: 600px){
-  .footer-grid{
-    grid-template-columns: 1fr;
-  }
-}
 
 /* =========================================================
    COMMERCIAL PLUMBING PAGE ONLY
@@ -2221,4 +2015,177 @@ select,
   0%   { transform: rotate(-35deg) translateY(0px); }
   50%  { transform: rotate(-35deg) translateY(-6px); }
   100% { transform: rotate(-35deg) translateY(0px); }
+}
+
+
+/* ===============================
+   FOOTER — SHOWER CO (COMPACT + ONE LINE)
+================================ */
+:root{
+  --promo-blue:#5FAFB0;                 /* promo strip light blue */
+  --footer-purple: var(--purple,#2a2140);
+}
+
+.site-footer{
+  background: var(--footer-purple);
+  color:#fff;
+  padding: 46px 0 0;
+  margin:0;
+}
+
+/* FORCE ONE LINE */
+.footer-grid{
+  display:flex;
+  flex-wrap:nowrap;                     /* never wrap into another row */
+  gap:28px;                             /* compact */
+  align-items:flex-start;
+  justify-content:space-between;
+}
+
+/* columns */
+.footer-col{
+  flex:0 0 auto;
+  min-width:140px;
+}
+
+.footer-brand{ min-width:240px; }
+.footer-address{ min-width:260px; }
+.footer-locations{ min-width:180px; }  /* locations list is long */
+
+/* logo */
+.footer-logo{
+  height:64px;
+  width:auto;
+  display:block;
+  object-fit:contain;
+  margin:0 0 10px;
+}
+
+/* social icons (circles) */
+.footer-social{
+  display:flex;
+  gap:10px;
+  margin:0 0 10px;
+  flex-wrap:wrap;
+}
+
+.footer-social a{
+  width:34px;
+  height:34px;
+  border-radius:999px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:rgba(255,255,255,0.14);
+  border:1px solid rgba(255,255,255,0.16);
+  text-decoration:none;
+  transition: background .18s ease, transform .18s ease, border-color .18s ease;
+}
+
+.footer-social a:hover{
+  background:rgba(255,255,255,0.22);
+  border-color:rgba(255,255,255,0.28);
+  transform:translateY(-1px);
+}
+
+.footer-social svg{
+  width:16px;
+  height:16px;
+  fill:#fff;
+}
+
+.footer-text{
+  margin:0;
+  color:rgba(255,255,255,0.82);
+  font-size:12.5px;
+  line-height:1.55;
+}
+
+.footer-blurb{ max-width:240px; }
+
+/* headings */
+.site-footer h3{
+  margin:0 0 8px;
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+}
+
+/* links */
+.footer-links{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+.footer-links li{ margin:0 0 6px; }
+
+.site-footer a{
+  color:rgba(255,255,255,0.86);
+  text-decoration:none;
+  transition:color .2s ease, opacity .2s ease;
+}
+
+.site-footer a:hover{
+  color: var(--promo-blue);             /* hover to light blue */
+  text-decoration:underline;
+}
+
+/* keep this clean */
+.footer-address a{ white-space:nowrap; }
+
+/* make the long locations column scroll internally if needed */
+.footer-locations .footer-links{
+  max-height: 240px;
+  overflow:auto;
+  padding-right:6px;
+}
+
+/* subtle scrollbar (optional) */
+.footer-locations .footer-links::-webkit-scrollbar{ width:6px; }
+.footer-locations .footer-links::-webkit-scrollbar-thumb{
+  background: rgba(255,255,255,0.18);
+  border-radius: 20px;
+}
+
+/* ===============================
+   COPYRIGHT BAR — PROMO BLUE (FIXED)
+================================ */
+.copyright-bar{
+  background: var(--promo-blue) !important;
+  margin: 0 !important;
+  padding: 14px 0 !important;
+  text-align:center;
+  border:0 !important;
+}
+
+.copyright-bar p{
+  margin:0 !important;
+  color:#fff !important;
+  font-size:11px;
+  letter-spacing:0.06em;
+  text-transform:uppercase;
+  font-weight:800;
+}
+
+.copyright-bar a{
+  color:#fff !important;
+  text-decoration:none;
+  transition: color .2s ease, background .2s ease;
+}
+
+.copyright-bar a:hover{
+  color: var(--promo-blue) !important;
+  background:#fff;
+  padding:2px 6px;
+  border-radius:6px;
+}
+
+/* ===============================
+   RESPONSIVE: allow horizontal scroll on smaller screens
+================================ */
+@media (max-width: 1200px){
+  .site-footer{ overflow-x:auto; }
+  .footer-grid{ min-width: 1200px; }   /* keeps single row; scrolls instead */
 }
