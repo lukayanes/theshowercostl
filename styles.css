@@ -2136,3 +2136,59 @@ transform: rotate(-45deg) translateY(0px);
 .nav-cta:hover{
   background:#452bb5;
 }
+
+
+/* RIGHT SIDE CONTAINER */
+.nav-right{
+  display:flex;
+  align-items:center;
+  gap:26px;
+  white-space:nowrap;
+}
+
+
+/* ALL RIGHT SIDE LINKS */
+.nav-right a,
+.nav-right .nav-dropbtn{
+  color:#ffffff;
+  text-decoration:none;
+  font-family:inherit;
+  font-size:15px;
+  letter-spacing:.04em;
+  white-space:nowrap;     /* prevents wrapping */
+}
+
+
+/* DROPDOWN BUTTON TEXT */
+.nav-dropbtn{
+  background:none;
+  border:none;
+  cursor:pointer;
+  padding:0;
+}
+
+
+/* CTA BUTTON */
+.nav-cta{
+  background:#5b3fd6;
+  color:#ffffff;
+  padding:12px 22px;
+  border-radius:6px;
+  font-weight:600;
+  white-space:nowrap;     /* forces one line */
+  display:inline-flex;
+  align-items:center;
+}
+
+.nav-cta:hover{
+  background:#452bb5;
+}
+
+.nav-right .nav-dropdown{
+  position:relative;
+}
+
+.nav-right .nav-dropmenu{
+  right:0;
+  left:auto;
+}
