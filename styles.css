@@ -2015,69 +2015,6 @@ select,
 }
 
 
-/* DIAGONAL CORNER RIBBON */
-
-.promo-corner{
-
-position:absolute;
-top:110px;
-left:-140px;
-
-transform:rotate(-45deg);
-
-background: linear-gradient(135deg, #38bdf8, #0ea5e9);
-color:#fff;
-
-padding:22px 140px;
-
-text-align:center;
-
-box-shadow:0 20px 40px rgba(0,0,0,0.4);
-
-z-index:999;
-
-}
-
-
-/* TEXT */
-
-.promo-corner span{
-
-font-family:"Karla",sans-serif;
-
-font-weight:900;
-
-font-size:26px;
-
-line-height:1.2;
-
-letter-spacing:1px;
-
-display:block;
-
-}
-
-
-/* MOBILE */
-
-@media(max-width:768px){
-
-.promo-corner{
-
-top:30px;
-left:-140px;
-
-padding:16px 120px;
-
-}
-
-.promo-corner span{
-
-font-size:18px;
-
-}
-
-}
 
 /* MOVE ANIMATION */
 
@@ -2217,20 +2154,17 @@ transform: rotate(-45deg) translateY(0px);
 
 /* CTA as purple button w/ white text (#4C3494) */
 .nav-right .nav-cta{
-  background:#4C3494;
-  color:#fff !important;
-  text-decoration:none;
-  padding:10px 16px;     /* slightly tighter so it fits more often */
-  border-radius:10px;
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
+  background: #4C3494;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 6px;
 
-  /* allow ONLY this button to wrap if needed */
-  white-space: normal;
-  line-height: 1.05;
-  max-width: 260px;
-  text-align: center;
+  /* DO NOT WRAP */
+  white-space: nowrap;
+
+  /* keep it from forcing layout */
+  flex-shrink: 0;
 }
 
 /* keep CTA text white in all states */
@@ -2241,23 +2175,38 @@ transform: rotate(-45deg) translateY(0px);
   color:#fff !important;
 }
 
-/* ===============================
-   FIX: PROMO CORNER (smaller + not over headline)
-================================ */
-
 .promo-corner{
-  top: 28px;           /* was 110px */
-  left: -110px;        /* tuck into corner */
-  padding: 10px 92px;  /* was 22px 140px */
-  z-index: 2;          /* was 999 (this was covering your title) */
-  box-shadow: 0 12px 26px rgba(0,0,0,0.28);
+  position: absolute;
+  top: 24px;          /* was 110px */
+  left: -110px;       /* less aggressive */
+  transform: rotate(-35deg); /* less steep */
+
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  color: #fff;
+
+  padding: 10px 110px;   /* was 22px 140px */
+  text-align: center;
+
+  box-shadow: 0 14px 28px rgba(0,0,0,0.35);
+
+  /* keep it behind the title content */
+  z-index: 1;
+  pointer-events: none;
 }
 
-/* promo text smaller (only affects ribbon, not nav) */
 .promo-corner span{
+  font-family: "Karla", sans-serif;
+  font-weight: 900;
   font-size: 16px;     /* was 26px */
-  letter-spacing: .08em;
   line-height: 1.15;
+  letter-spacing: 0.5px;
+  display: block;
+}
+
+/* Ensure hero text sits above the ribbon */
+.hero-content{
+  position: relative;
+  z-index: 2;
 }
 
 /* make sure hero headline stays above ribbon */
