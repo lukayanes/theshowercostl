@@ -967,7 +967,7 @@ html.is-loaded .hero-sub{
    FOOTER
 ================================ */
 .site-footer{
-  background: var(--gray-deep);
+  background: var(--purple);
   color: #fff;
   padding: 70px 0 0;
 }
