@@ -2070,7 +2070,7 @@ select,
   z-index: 5;
 }
 
-.promo-corner{
+.{
   position: absolute;
   top: 24px;          /* higher */
   left: -70px;       /* less intrusive */
