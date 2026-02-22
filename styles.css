@@ -2128,7 +2128,7 @@ select,
 }
 
 .site-footer a:hover{
-  color: var(--promo-blue);             /* hover to light blue */
+  color: #0ea5e9;             /* hover to light blue */
   text-decoration:underline;
 }
 
@@ -2199,7 +2199,7 @@ line-height: 1.7;
 
 .copyright-bar a:hover{
 
-color:#0ea5e9 !important;   /* use solid color from gradient */
+color:#ffffff !important;   /* use solid color from gradient */
 
 background:transparent !important;
 
