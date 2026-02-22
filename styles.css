@@ -2397,3 +2397,35 @@ html, body{
   text-decoration: none;
 
 }
+
+/* FORCE: Last CTA button to match nav purple button */
+.last-cta-panel a.nav-cta,
+.last-cta-panel .nav-cta{
+  background: var(--purple, #7c3aed) !important;
+  color: #ffffff !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  padding: 12px 22px !important;
+  border-radius: 8px !important;
+
+  font-weight: 900 !important;
+  text-transform: none !important;
+  letter-spacing: 0 !important;
+  text-decoration: none !important;
+
+  border: 0 !important;
+  box-shadow: none !important;
+
+  width: fit-content !important;
+  max-width: 100% !important;
+  align-self: flex-start !important;
+}
+
+.last-cta-panel a.nav-cta:hover,
+.last-cta-panel .nav-cta:hover{
+  filter: brightness(0.95) !important;
+  text-decoration: none !important;
+  color: #ffffff !important;
+}
