@@ -2014,7 +2014,29 @@ select,
   overflow:visible;
 }
 
+.promo-corner{
+  position: absolute;
 
+  top: 40px;
+  left: -95px;
+
+  transform: rotate(-35deg);
+
+  background: linear-gradient(135deg,#38bdf8,#0ea5e9);
+  color:#fff;
+
+  padding: 12px 120px;
+
+  box-shadow: 0 12px 24px rgba(0,0,0,.35);
+
+  z-index: 3;
+}
+
+.promo-corner span{
+  font-size: 17px;
+  font-weight: 900;
+  letter-spacing: .5px;
+}
 
 /* MOVE ANIMATION */
 
@@ -2175,33 +2197,7 @@ transform: rotate(-45deg) translateY(0px);
   color:#fff !important;
 }
 
-.promo-corner{
-  position: absolute;
-  top: 24px;          /* was 110px */
-  left: -110px;       /* less aggressive */
-  transform: rotate(-35deg); /* less steep */
 
-  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
-  color: #fff;
-
-  padding: 10px 110px;   /* was 22px 140px */
-  text-align: center;
-
-  box-shadow: 0 14px 28px rgba(0,0,0,0.35);
-
-  /* keep it behind the title content */
-  z-index: 1;
-  pointer-events: none;
-}
-
-.promo-corner span{
-  font-family: "Karla", sans-serif;
-  font-weight: 900;
-  font-size: 16px;     /* was 26px */
-  line-height: 1.15;
-  letter-spacing: 0.5px;
-  display: block;
-}
 
 /* Ensure hero text sits above the ribbon */
 .hero-content{
