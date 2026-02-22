@@ -2203,62 +2203,67 @@ transform: rotate(-45deg) translateY(0px);
   right: 0;
 }
 
-/* NEVER WRAP dropdown labels */
-.nav-dropbtn{ white-space: nowrap; }
+/* ===============================
+   FIX: NAV WRAP + CTA BUTTON
+   (no font-size changes)
+================================ */
 
-/* keep dropdown menus aligned nicely */
-.nav-right .nav-dropmenu{ right:0; left:auto; }
-
-/* CTA tighter so it fits more often (NO font-size change) */
-.nav-right .nav-cta{
-  padding: 10px 14px; /* was larger */
-  border-radius: 8px;
-  white-space: nowrap; /* keep on one line if it fits */
+/* Never wrap dropdown labels (Design/Locations/Solutions/About/Help) */
+.nav-dropbtn,
+.nav-left a,
+.nav-right a{
+  white-space: nowrap;
 }
 
-
-/* Allow ONLY the CTA to wrap when space is tight */
-.nav-right .nav-cta{
-  white-space: normal;
-  line-height: 1.05;
-  max-width: 240px;
-  text-align:center;
-}
-
+/* CTA as purple button w/ white text (#4C3494) */
 .nav-right .nav-cta{
   background:#4C3494;
-  color:#fff;
+  color:#fff !important;
   text-decoration:none;
+  padding:10px 16px;     /* slightly tighter so it fits more often */
+  border-radius:10px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+
+  /* allow ONLY this button to wrap if needed */
+  white-space: normal;
+  line-height: 1.05;
+  max-width: 260px;
+  text-align: center;
 }
 
-/* keep white text in all states */
+/* keep CTA text white in all states */
 .nav-right .nav-cta:link,
 .nav-right .nav-cta:visited,
 .nav-right .nav-cta:hover,
 .nav-right .nav-cta:active{
-  color:#fff;
+  color:#fff !important;
 }
 
-/* PROMO RIBBON — smaller + stays in corner */
-.promo-ribbon{
-  position:absolute;
-  top: 28px;          /* move up */
-  left: -70px;        /* tuck into corner */
-  transform: rotate(-45deg);
-  width: 260px;       /* smaller */
-  padding: 10px 14px; /* smaller */
-  font-weight: 700;
-  letter-spacing: .06em;
-  font-size: 14px;    /* if your ribbon has a font-size, keep it here only */
-  z-index: 2;         /* below headline if needed */
-  opacity: .95;
+/* ===============================
+   FIX: PROMO CORNER (smaller + not over headline)
+================================ */
+
+.promo-corner{
+  top: 28px;           /* was 110px */
+  left: -110px;        /* tuck into corner */
+  padding: 10px 92px;  /* was 22px 140px */
+  z-index: 2;          /* was 999 (this was covering your title) */
+  box-shadow: 0 12px 26px rgba(0,0,0,0.28);
 }
 
-/* Make sure your hero text sits above it */
-.hero h1,
-.hero .hero-title,
-.hero .title,
-.hero .hero-content{
+/* promo text smaller (only affects ribbon, not nav) */
+.promo-corner span{
+  font-size: 16px;     /* was 26px */
+  letter-spacing: .08em;
+  line-height: 1.15;
+}
+
+/* make sure hero headline stays above ribbon */
+.top-hero h1,
+.top-hero .hero-title,
+.top-hero .hero-content{
   position: relative;
   z-index: 5;
 }
