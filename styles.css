@@ -2656,3 +2656,49 @@ html, body{
   }
 
 }
+
+@media (max-width:768px){
+
+  .top-nav .nav-right .nav-cta{
+
+    position: fixed !important;
+
+    left: 16px !important;
+    right: 16px !important;
+
+    bottom: 16px !important;
+    top: auto !important;   /* CRITICAL FIX */
+
+    margin: 0 !important;
+
+    z-index: 99999 !important;
+
+  }
+
+}
+
+@media (max-width:768px){
+
+  .promo-corner{
+
+    position: relative !important;
+
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+
+    transform: none !important;
+
+    width: 100% !important;
+
+    display: block !important;
+
+    text-align: center !important;
+
+    border-radius: 0 !important;
+
+    padding: 12px 16px !important;
+
+  }
+
+}
