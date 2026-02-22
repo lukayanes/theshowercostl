@@ -2104,33 +2104,6 @@ transform: rotate(-45deg) translateY(-8px);
 transform: rotate(-45deg) translateY(0px);
 }
 
-}
-
-/* KEEP LEFT AND RIGHT ON ONE LINE */
-.top-nav-inner{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  flex-wrap:nowrap;   /* THIS STOPS WRAPPING */
-}
-
-
-/* KEEP LEFT SIDE ITEMS IN ONE ROW */
-.nav-left{
-  display:flex;
-  align-items:center;
-  gap:22px;           /* keep your existing spacing */
-  flex-wrap:nowrap;   /* prevents dropdown labels wrapping */
-}
-
-
-/* KEEP RIGHT SIDE ITEMS IN ONE ROW */
-.nav-right{
-  display:flex;
-  align-items:center;
-  gap:22px;
-  flex-wrap:nowrap;
-}
 
 .nav-right .nav-cta{
   background:#4C3494;
@@ -2161,3 +2134,71 @@ transform: rotate(-45deg) translateY(0px);
 }
 
 
+/* ===============================
+   NAV — TRUE CENTER LOGO + NO WRAP DROPDOWNS
+   (paste at very bottom)
+================================ */
+
+/* bring back the 3-column grid so logo is always centered */
+.top-nav-inner{
+  display: grid !important;
+  grid-template-columns: 1fr auto 1fr !important;
+  align-items: center;
+  gap: 18px;
+}
+
+/* left column hugs toward logo, never wraps */
+.nav-left{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 26px;
+  flex-wrap: nowrap;
+  min-width: 0;
+}
+
+/* right column hugs toward logo, never wraps (except CTA if needed) */
+.nav-right{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 26px;
+  flex-wrap: nowrap;
+  min-width: 0;
+}
+
+/* NEVER WRAP the dropdown labels (Design, Locations, Solutions, About Us, Help / Contact) */
+.nav-dropbtn,
+.nav-left a,
+.nav-right a{
+  white-space: nowrap;
+}
+
+/* CTA: allow wrap if the bar gets tight (dropdowns still won't wrap) */
+.nav-right .nav-cta{
+  background: #4C3494;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+
+  /* allow button to wrap if needed */
+  white-space: normal;
+  line-height: 1.05;
+  text-align: center;
+  max-width: 260px; /* adjust if you want */
+}
+
+/* keep CTA text white in all states */
+.nav-right .nav-cta:link,
+.nav-right .nav-cta:visited,
+.nav-right .nav-cta:hover,
+.nav-right .nav-cta:active{
+  color:#fff;
+}
+
+/* right-side dropdown menus align to the right edge of their label */
+.nav-right .nav-dropmenu{
+  left: auto;
+  right: 0;
+}
