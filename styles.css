@@ -2429,3 +2429,58 @@ html, body{
   text-decoration: none !important;
   color: #ffffff !important;
 }
+
+.process-grid{
+
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:28px 44px;
+  margin-top:20px;
+
+}
+
+.process-step{
+
+  display:flex;
+  gap:18px;
+  align-items:flex-start;
+
+}
+
+.process-number{
+
+  font-size:44px;
+  font-weight:700;
+  line-height:1;
+  color:#7A6CF6; /* purple */
+
+  min-width:32px;
+
+}
+
+.process-step h4{
+
+  margin:0;
+  font-size:18px;
+
+}
+
+.process-step p{
+
+  margin-top:6px;
+  font-size:15px;
+  line-height:1.5;
+
+}
+
+
+/* MOBILE */
+@media(max-width:768px){
+
+  .process-grid{
+
+    grid-template-columns:1fr;
+
+  }
+
+}
