@@ -2008,51 +2008,7 @@ select,
   margin-top: 18px;
 }
 
-/* =========================================
-   DESKTOP NAV: keep logo centered + stop wrapping
-========================================= */
-@media (min-width: 901px){
-  .top-nav-inner{
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
-    align-items: center;
-    gap: 18px;
-  }
 
-  .nav-left,
-  .nav-right{
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;     /* key: no wrapping */
-    gap: 22px;             /* slightly tighter than 26 */
-    min-width: 0;
-  }
-
-  .nav-left{ justify-content: flex-end; }
-  .nav-right{ justify-content: flex-start; }
-
-  .nav-left a,
-  .nav-right a,
-  .nav-dropbtn{
-    white-space: nowrap;   /* prevent label wrapping */
-  }
-
-  .nav-right .nav-cta{
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    white-space: nowrap;
-    flex: 0 1 auto;
-    padding: 10px 16px;
-    border-radius: 10px;
-    background: #4C3494;
-    color: #fff !important;
-    line-height: 1;
-    max-width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-}
 
 /* =========================================
    PROMO RIBBON: smaller + stays off headline
