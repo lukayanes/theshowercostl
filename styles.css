@@ -2870,3 +2870,49 @@ html, body{
   }
 
 }
+
+/* =========================================
+   MOBILE CONSULTATION BUTTON — CLEAN VERSION
+========================================= */
+
+.mobile-cta{
+  display: none;
+}
+
+@media (max-width:768px){
+
+  .mobile-cta{
+
+    display: block;
+
+    padding: 18px;
+
+    background: #ffffff;
+
+  }
+
+  .mobile-cta a{
+
+    display: block;
+
+    background: #4C3494;
+
+    color: #fff;
+
+    text-align: center;
+
+    padding: 16px;
+
+    font-size: 18px;
+
+    font-family: "Unica One", system-ui;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+
+  }
+
+}
