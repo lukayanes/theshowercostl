@@ -2131,3 +2131,11 @@ transform: rotate(-45deg) translateY(0px);
   gap:22px;
   flex-wrap:nowrap;
 }
+
+.nav-right .nav-cta{
+  background:#4C3494;
+  color:#fff;
+  padding:10px 18px;
+  border-radius:6px;
+  white-space:nowrap;
+}
