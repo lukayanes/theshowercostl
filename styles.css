@@ -2049,7 +2049,7 @@ select,
 
 .promo-corner{
   position: absolute;
-  top: 24px;          /* higher */
+  top: 90px;          /* higher */
   left: -110px;       /* less intrusive */
   transform: rotate(-35deg);
 
