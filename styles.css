@@ -460,7 +460,7 @@ html.is-loaded .top-hero::before{
   border-radius: 12px;
   border: none;
   cursor: pointer;
-  background: #1F6FE5;
+  background: #4C3494;
   color: #fff;
   font-weight: 700;
 }
@@ -2025,7 +2025,7 @@ left:-140px;
 
 transform:rotate(-45deg);
 
-background: #4C3494;
+background: linear-gradient(135deg, #38bdf8, #0ea5e9);
 color:#fff;
 
 padding:22px 140px;
