@@ -2139,3 +2139,18 @@ transform: rotate(-45deg) translateY(0px);
   border-radius:6px;
   white-space:nowrap;
 }
+
+/* REMOVE ANY GLOW / SHADOW */
+.nav-logo img{
+  box-shadow: none !important;
+  filter: none !important;
+  transition: transform .2s ease, opacity .2s ease;
+}
+
+
+/* HOVER EFFECT */
+.nav-logo:hover img{
+  transform: translateY(-2px);   /* slight lift */
+  opacity: .85;                  /* subtle fade */
+  cursor: pointer;
+}
