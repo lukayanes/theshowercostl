@@ -2735,3 +2735,30 @@ html, body{
   }
 
 }
+
+@media (max-width:768px){
+
+  .top-hero::before{
+
+    transform: none !important;
+
+    background-position: left center !important;
+
+    background-size: cover !important;
+
+  }
+
+}
+
+@media (max-width:768px){
+
+  .top-nav .nav-cta{
+
+    position: fixed !important;
+
+    bottom: 16px !important;
+    top: auto !important;
+
+  }
+
+}
