@@ -894,7 +894,7 @@ height:320px;
 
 .last-cta-panel h2{
   margin: 0 0 18px;
-  color: var(--gray);
+  color: rgba(11, 31, 51, 0.85)
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.03em;
