@@ -2862,3 +2862,11 @@ html, body{
   }
 
 }
+
+@media (max-width:768px){
+
+  .top-nav .nav-cta{
+    display: none !important;
+  }
+
+}
