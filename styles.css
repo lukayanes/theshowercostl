@@ -167,7 +167,10 @@ a{
 .nav-right{
   display: flex;
   align-items: center;
-  gap: 26px;
+
+  gap: 22px;          /* slightly tighter */
+  flex-wrap: nowrap;  /* THIS stops wrapping */
+  min-width: 0;
 }
 
 .nav-left{ justify-content: flex-end; }
