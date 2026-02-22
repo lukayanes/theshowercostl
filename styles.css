@@ -2916,3 +2916,17 @@ html, body{
   }
 
 }
+
+@media (max-width:768px){
+
+  /* 1) HIDE ONLY the NAV "Book A Free Consultation" button */
+  .top-nav .nav-right > a.nav-cta{
+    display: none !important;
+  }
+
+  /* 2) (Optional) If you want to hide ANY CTA styled link inside the nav */
+  .top-nav a.nav-cta{
+    display: none !important;
+  }
+
+}
