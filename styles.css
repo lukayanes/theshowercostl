@@ -2802,3 +2802,52 @@ html, body{
   }
 
 }
+
+/* =========================================
+   MOBILE NAV CTA — PLACE BELOW NAV
+========================================= */
+@media (max-width:768px){
+
+  /* stack nav rows */
+  .top-nav-inner{
+
+    display: flex !important;
+
+    flex-direction: column !important;
+
+    align-items: center !important;
+
+    gap: 10px;
+
+  }
+
+  /* force CTA onto its own row */
+  .top-nav .nav-right{
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+  }
+
+  .top-nav .nav-right .nav-cta{
+
+    position: static !important;   /* THIS IS THE KEY */
+
+    width: calc(100% - 24px);
+
+    max-width: 420px;
+
+    margin: 6px auto 10px;
+
+    padding: 14px 16px;
+
+    font-size: 18px;
+
+    text-align: center;
+
+  }
+
+}
