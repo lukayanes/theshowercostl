@@ -2762,3 +2762,43 @@ html, body{
   }
 
 }
+
+/* =========================================
+   MOBILE PROMO RIBBON — CONVERT TO HORIZONTAL
+========================================= */
+@media (max-width:768px){
+
+  /* remove ribbon area from hero image */
+  .top-hero::before{
+    transform: none !important;
+    background-position: right center !important;
+  }
+
+  /* create horizontal promo bar */
+  .top-hero .hero-left::before{
+
+    content: "0% FINANCING FOR 24 MONTHS OR TAKE 8% OFF";
+
+    display: block;
+
+    background: linear-gradient(90deg,#39a9dc,#2d8fbd);
+
+    color: white;
+
+    font-family: "Unica One", system-ui;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    font-size: 14px;
+
+    padding: 10px 14px;
+
+    margin-bottom: 18px;
+
+    border-radius: 6px;
+
+    text-align: center;
+
+  }
+
+}
