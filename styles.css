@@ -2154,3 +2154,25 @@ transform: rotate(-45deg) translateY(0px);
   opacity: .85;                  /* subtle fade */
   cursor: pointer;
 }
+
+/* make nav container positioning reference */
+.top-nav{
+  position: relative;
+}
+
+
+/* TRUE CENTER THE LOGO */
+.nav-logo{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+
+/* keep left and right normal */
+.top-nav-inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
