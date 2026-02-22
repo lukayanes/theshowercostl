@@ -2485,4 +2485,10 @@ html, body{
 
 }
 
+.biz-card{
+  background-image: var(--bg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
