@@ -2347,3 +2347,7 @@ GOOGLE REVIEWS SECTION
   border-radius: 14px;
   box-shadow: 0 30px 80px rgba(0,0,0,0.35);
 }
+
+.grecaptcha-badge {
+  visibility: visible !important;
+}
