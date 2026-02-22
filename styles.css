@@ -2106,3 +2106,29 @@ transform: rotate(-45deg) translateY(0px);
 
 }
 
+/* PREVENT WRAPPING ON RIGHT NAV ITEMS */
+.nav-right .nav-dropdown,
+.nav-right .nav-dropbtn,
+.nav-right a{
+  white-space: nowrap;
+}
+
+
+/* BOOK CONSULTATION BUTTON — PURPLE, WHITE TEXT */
+.nav-right .nav-cta{
+  background:#5b3fd6;
+  color:#ffffff;
+  text-decoration:none;
+  padding:10px 18px;
+  border-radius:6px;
+  white-space: nowrap;
+}
+
+
+/* KEEP TEXT WHITE IN ALL STATES */
+.nav-right .nav-cta:link,
+.nav-right .nav-cta:visited,
+.nav-right .nav-cta:hover,
+.nav-right .nav-cta:active{
+  color:#ffffff;
+}
