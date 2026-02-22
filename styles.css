@@ -642,11 +642,7 @@ html.is-loaded .hero-sub{
 /* arrows + strip */
 .biz-wrap{ position: relative; }
 
-.biz-arrow{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 20;
+.biz-arrow{display:none}
 
   width: 44px;
   height: 44px;
@@ -665,57 +661,13 @@ html.is-loaded .hero-sub{
 
 .biz-arrow:hover{ background: rgba(0,0,0,0.65); }
 
-.biz-strip{
-  width: 100%;
-  overflow-x: auto;
-  overflow-y: hidden;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  cursor: grab;
-
-  /* keep arrows off cards */
-  padding: 0 60px;
-
-  /* subtle fade at edges */
-  mask-image: linear-gradient(to right, transparent, black 7%, black 93%, transparent);
-}
-.biz-strip::-webkit-scrollbar{ display:none; }
-.biz-strip:active{ cursor: grabbing; }
-
-.biz-track{
-  display: flex;
-  gap: 14px;
-  padding: 10px 4vw 6px;
-  align-items: stretch;
-  width: max-content;
-}
-
-.biz-card{
-  position: relative;
-  flex: 0 0 auto;
-  scroll-snap-align: start;
-
-  width: clamp(180px, 18vw, 260px);
-  height: clamp(180px, 18vw, 260px);
-  border-radius: 0;
-  overflow: hidden;
-
-  background:
-    linear-gradient(180deg, rgba(0,0,0,.08), rgba(0,0,0,.55)),
-    var(--bg);
-  background-size: cover;
-  background-position: center;
-}
-
-.biz-card::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background: radial-gradient(600px 240px at 50% 105%, rgba(255,106,0,.22), transparent 60%);
-  pointer-events:none;
-}
+/* RECTANGLE FULL-WIDTH CARDS */
+.biz-strip{overflow:visible;padding:0;mask-image:none}
+.biz-track{flex-direction:column;gap:18px;width:100%;padding:0}
+.biz-card{width:100%;height:340px;border-radius:0;flex:none}
+.biz-overlay{align-items:flex-start;text-align:left;padding:48px;max-width:700px;background:linear-gradient(to right,rgba(0,0,0,.65),rgba(0,0,0,.25),transparent)}
+.biz-overlay h3{font-size:28px}
+.biz-overlay p{font-size:16px;max-width:60ch}
 
 .biz-overlay{
   position:absolute;
