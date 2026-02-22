@@ -2014,7 +2014,7 @@ select,
 @media (min-width: 901px){
   .top-nav-inner{
     display: grid;
-    grid-template-columns: 1fr auto 1fr;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
     align-items: center;
     gap: 18px;
   }
@@ -2048,9 +2048,9 @@ select,
     background: #4C3494;
     color: #fff !important;
     line-height: 1;
-   max-width: 100%;
-   overflow: hidden;
-   text-overflow: ellipsis;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 
