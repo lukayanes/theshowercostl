@@ -2702,3 +2702,36 @@ html, body{
   }
 
 }
+
+@media (max-width:768px){
+
+  .top-hero{
+    overflow: visible !important;
+  }
+
+  .top-hero::before{
+
+    transform: scale(1) !important;
+
+    background-position: center center !important;
+
+    left: 0 !important;
+    right: 0 !important;
+
+  }
+
+}
+
+@media (max-width:768px){
+
+  .top-nav .nav-right{
+    position: static !important;
+  }
+
+  .top-nav .nav-right .nav-cta{
+    position: fixed !important;
+    bottom: 16px !important;
+    top: auto !important;
+  }
+
+}
