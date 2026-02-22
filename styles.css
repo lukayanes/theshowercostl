@@ -2049,8 +2049,8 @@ select,
 
 .promo-corner{
   position: absolute;
-  top: 64px;          /* higher */
-  left: -140px;       /* less intrusive */
+  top: 60px;          /* higher */
+  left: -120px;       /* less intrusive */
   transform: rotate(-25deg);
 
   padding: 10px 110px 10px 90px;
