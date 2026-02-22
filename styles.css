@@ -2008,37 +2008,72 @@ select,
 }
 
 
-/* PROMO BADGE */
+/* make sure hero can position children */
+.hero-overlay{
+  position:relative;
+  overflow:visible;
+}
 
-.promo-badge{
+
+/* DIAGONAL CORNER RIBBON */
+
+.promo-corner{
 
 position:absolute;
+top:40px;
+left:-120px;
 
-top:30px;
-left:30px;
+transform:rotate(-45deg);
 
 background:#7c3aed;
 color:#fff;
 
-padding:18px 22px;
+padding:22px 140px;
 
-border-radius:12px;
+text-align:center;
 
-box-shadow:0 15px 35px rgba(0,0,0,0.35);
+box-shadow:0 20px 40px rgba(0,0,0,0.4);
 
 z-index:999;
 
 }
 
 
-/* mobile */
+/* TEXT */
+
+.promo-corner span{
+
+font-family:"Karla",sans-serif;
+
+font-weight:900;
+
+font-size:26px;
+
+line-height:1.2;
+
+letter-spacing:1px;
+
+display:block;
+
+}
+
+
+/* MOBILE */
 
 @media(max-width:768px){
 
-.promo-badge{
+.promo-corner{
 
-top:20px;
-left:20px;
+top:30px;
+left:-140px;
+
+padding:16px 120px;
+
+}
+
+.promo-corner span{
+
+font-size:18px;
 
 }
 
