@@ -210,6 +210,30 @@ a{
   color: var(--nav-text);
 }
 
+/* Allow ONLY the Book Consultation button to wrap */
+.nav-right a.nav-cta{
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 16px;
+
+  background: #4C3494;
+  color: #ffffff;
+
+  border-radius: 10px;
+
+  white-space: normal;   /* allows wrapping */
+
+  max-width: 170px;      /* forces wrap when needed */
+
+  line-height: 1.15;
+
+  text-align: center;
+
+}
+
 .nav-left a:hover,
 .nav-right a:hover,
 .nav-dropbtn:hover{
