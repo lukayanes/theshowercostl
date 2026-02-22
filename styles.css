@@ -2526,3 +2526,86 @@ html, body{
   inset:0;
   background:rgba(0,0,0,0.25);
 }
+
+@media (max-width:768px){
+
+  .promo-corner{
+    position: relative;
+    top: auto;
+    right: auto;
+
+    transform: none !important;
+
+    width: 100%;
+    border-radius: 0;
+
+    text-align: center;
+
+    padding: 10px 14px;
+
+    font-size: 13px;
+  }
+
+}
+
+@media (max-width:768px){
+
+  .nav-cta{
+
+    position: fixed;
+
+    bottom: 16px;
+    left: 16px;
+    right: 16px;
+
+    z-index: 99999;
+
+    font-size: 18px;
+
+    padding: 16px;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+
+  }
+
+}
+
+@media (max-width:768px){
+
+  .last-cta-photo{
+
+    min-height: 260px;
+
+    background-position: center;
+
+  }
+
+}
+
+.biz-card{
+
+  background-image: var(--bg);
+
+}
+
+@media (max-width:768px){
+
+  .footer-grid{
+
+    grid-template-columns: 1fr;
+
+    text-align: center;
+
+  }
+
+  .footer-logo{
+
+    margin: 0 auto 20px;
+
+  }
+
+}
