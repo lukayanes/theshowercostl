@@ -1141,32 +1141,62 @@ html.is-loaded .hero-sub{
 }
 
 /* ===============================
-   COPYRIGHT BAR (MATCH PROMO BLUE)
+   COPYRIGHT BAR — PROMO BLUE (FIXED)
 ================================ */
-.copyright-bar{
-  background: var(--promo-blue);
-  margin: 58px 0 0;
-  padding: 18px 0;
-  text-align: center;
+
+/* Use your promo strip color here */
+:root{
+  --promo-blue:#5FAFB0;
 }
 
+/* Kill the mystery white strip + force correct color */
+.copyright-bar{
+  background: var(--promo-blue) !important;
+  margin: 0 !important;
+  padding: 18px 0 !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  position: relative;
+}
+
+/* If something is inserting a white top border/spacing, this nukes it */
+.copyright-bar::before{
+  content:"";
+  display:block;
+  height:0;
+}
+
+/* Remove bottom spacing on the footer that can reveal the page background (white) */
+.site-footer{
+  margin: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Prevent margin-collapse / random gaps between footer and next section */
+.site-footer + .copyright-bar{
+  margin-top: 0 !important;
+}
+
+/* Text */
 .copyright-bar p{
-  margin: 0;
-  color: #fff;
+  margin: 0 !important;
+  color: #fff !important;
   font-size: 12px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   font-weight: 700;
 }
 
+/* Links */
 .copyright-bar a{
-  color: #fff;
+  color: #fff !important;
   text-decoration: none;
   transition: color .2s ease, background .2s ease;
 }
 
+/* Hover: words turn light blue (promo blue) */
 .copyright-bar a:hover{
-  color: var(--promo-blue);
+  color: var(--promo-blue) !important;
   background: #fff;
   padding: 2px 6px;
   border-radius: 6px;
