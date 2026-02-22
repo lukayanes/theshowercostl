@@ -2296,3 +2296,54 @@ background:#f5f5f5;
 padding:100px 0;
 
 }
+
+/* ===============================
+GOOGLE REVIEWS SECTION
+=============================== */
+
+.reviews{
+  position: relative;
+  padding: 140px 0;
+  overflow: hidden;
+}
+
+
+.reviews-bg{
+  position: absolute;
+  inset: 0;
+  background: url("assets/stlskyline.webp") center / cover no-repeat;
+  z-index: 1;
+}
+
+
+.reviews-overlay{
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  z-index: 2;
+}
+
+
+.reviews-inner{
+  position: relative;
+  z-index: 3;
+  text-align: center;
+}
+
+
+.reviews-title{
+  color: #ffffff;
+  font-size: clamp(28px, 3vw, 40px);
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+
+.reviews-panel{
+  max-width: 900px;
+  margin: auto;
+  background: #ffffff;
+  padding: 30px 20px;
+  border-radius: 14px;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.35);
+}
