@@ -880,7 +880,7 @@ height:320px;
 }
 
 .last-cta-photo{
-  background: url("./assets/herotest.webp") center/cover no-repeat;
+  background: url("/assets/herotest.webp") center/cover no-repeat;
   filter: grayscale(15%);
 }
 
