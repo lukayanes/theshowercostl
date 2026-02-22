@@ -2078,3 +2078,30 @@ font-size:18px;
 }
 
 }
+
+/* MOVE ANIMATION */
+
+.promo-corner{
+
+animation: promoFloat 3s ease-in-out infinite;
+
+}
+
+
+/* KEYFRAMES */
+
+@keyframes promoFloat {
+
+0%{
+transform: rotate(-45deg) translateY(0px);
+}
+
+50%{
+transform: rotate(-45deg) translateY(-8px);
+}
+
+100%{
+transform: rotate(-45deg) translateY(0px);
+}
+
+}
