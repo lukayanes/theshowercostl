@@ -2609,3 +2609,50 @@ html, body{
   }
 
 }
+
+@media (max-width: 768px){
+
+  /* FLOATING CTA ONLY FOR NAV CTA */
+  .top-nav .nav-right .nav-cta{
+    position: fixed !important;
+    left: 14px !important;
+    right: 14px !important;
+    bottom: 14px !important;
+    z-index: 99999 !important;
+
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    padding: 14px 16px !important;
+    border-radius: 14px !important;
+
+    font-size: 18px !important;
+    line-height: 1.1 !important;
+    max-width: none !important;
+    width: auto !important;
+
+    white-space: nowrap !important;
+
+    box-shadow: 0 10px 26px rgba(0,0,0,0.28) !important;
+  }
+
+  /* make room so the floating CTA doesn't cover page content */
+  body{
+    padding-bottom: 84px;
+  }
+
+  /* IMPORTANT: undo floating behavior for the LAST-CTA section button */
+  .last-cta .nav-cta{
+    position: static !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    z-index: auto !important;
+    max-width: none !important;
+    width: auto !important;
+    box-shadow: none !important;
+    white-space: normal !important;
+  }
+
+}
