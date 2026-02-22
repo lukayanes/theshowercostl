@@ -2382,3 +2382,18 @@ html, body{
   margin-top: 10px;
   align-self: flex-start;
 }
+
+/* Fix nav CTA inside last CTA panel */
+.last-cta-panel .nav-cta{
+
+  display: inline-block;
+
+  width: auto;
+
+  align-self: flex-start;
+
+  margin-top: 10px;
+
+  text-decoration: none;
+
+}
