@@ -2369,3 +2369,11 @@ html, body{
   display: block;
   line-height: 0;
 }
+
+.about-underline{
+  width: 44px;
+  height: 3px;
+  background: var(--purple);
+  border-radius: 999px;
+  margin: 0 0 22px;
+}
