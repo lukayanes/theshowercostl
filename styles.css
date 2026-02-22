@@ -2105,3 +2105,34 @@ transform: rotate(-45deg) translateY(0px);
 }
 
 }
+
+/* RIGHT SIDE DROPDOWNS */
+.nav-right .nav-dropdown{
+  position: relative;
+}
+
+.nav-right .nav-dropmenu{
+  position: absolute;
+  top: 100%;
+  right: 0;      /* THIS fixes alignment */
+  left: auto;    /* prevents left alignment */
+  min-width: 240px;
+}
+
+.nav-cta{
+  background:#5b3fd6;
+  color:#fff;
+  padding:12px 22px;
+  border-radius:6px;
+  text-decoration:none;
+  font-family:inherit;
+  font-size:inherit;
+  font-weight:600;
+  margin-left:20px;
+  white-space:nowrap;   /* forces one line */
+  transition:.25s;
+}
+
+.nav-cta:hover{
+  background:#452bb5;
+}
