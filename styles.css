@@ -2202,3 +2202,63 @@ transform: rotate(-45deg) translateY(0px);
   left: auto;
   right: 0;
 }
+
+/* NEVER WRAP dropdown labels */
+.nav-dropbtn{ white-space: nowrap; }
+
+/* keep dropdown menus aligned nicely */
+.nav-right .nav-dropmenu{ right:0; left:auto; }
+
+/* CTA tighter so it fits more often (NO font-size change) */
+.nav-right .nav-cta{
+  padding: 10px 14px; /* was larger */
+  border-radius: 8px;
+  white-space: nowrap; /* keep on one line if it fits */
+}
+
+
+/* Allow ONLY the CTA to wrap when space is tight */
+.nav-right .nav-cta{
+  white-space: normal;
+  line-height: 1.05;
+  max-width: 240px;
+  text-align:center;
+}
+
+.nav-right .nav-cta{
+  background:#4C3494;
+  color:#fff;
+  text-decoration:none;
+}
+
+/* keep white text in all states */
+.nav-right .nav-cta:link,
+.nav-right .nav-cta:visited,
+.nav-right .nav-cta:hover,
+.nav-right .nav-cta:active{
+  color:#fff;
+}
+
+/* PROMO RIBBON — smaller + stays in corner */
+.promo-ribbon{
+  position:absolute;
+  top: 28px;          /* move up */
+  left: -70px;        /* tuck into corner */
+  transform: rotate(-45deg);
+  width: 260px;       /* smaller */
+  padding: 10px 14px; /* smaller */
+  font-weight: 700;
+  letter-spacing: .06em;
+  font-size: 14px;    /* if your ribbon has a font-size, keep it here only */
+  z-index: 2;         /* below headline if needed */
+  opacity: .95;
+}
+
+/* Make sure your hero text sits above it */
+.hero h1,
+.hero .hero-title,
+.hero .title,
+.hero .hero-content{
+  position: relative;
+  z-index: 5;
+}
