@@ -2051,7 +2051,7 @@ select,
   position: absolute;
   top: 60px;          /* higher */
   left: -95px;       /* less intrusive */
-  transform: rotate(-35deg);
+  transform: rotate(-45deg);
 
   padding: 14px 160px; /* smaller */
   background: linear-gradient(135deg,#38bdf8,#0ea5e9);
