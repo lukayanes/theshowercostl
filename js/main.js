@@ -105,38 +105,52 @@ requestAnimationFrame(() => {
 })();
 
 /* ===============================
-   MOBILE SERVICES DROPDOWN
+   MOBILE NAV DROPDOWNS — FIXED
 ================================ */
 (() => {
-  const dd = document.querySelector(".nav-dropdown");
-  const btn = dd?.querySelector(".nav-dropbtn");
-  const menu = dd?.querySelector(".nav-dropmenu");
-  if (!dd || !btn || !menu) return;
 
-  const isTouch = window.matchMedia("(hover: none), (pointer: coarse)").matches;
+  const dropdowns = document.querySelectorAll(".nav-dropdown");
+
+  const isTouch =
+    window.matchMedia("(hover: none), (pointer: coarse)").matches;
+
   if (!isTouch) return;
 
-  const close = () => {
-    dd.classList.remove("is-open");
-    btn.setAttribute("aria-expanded", "false");
-  };
+  dropdowns.forEach(dd => {
 
-  btn.addEventListener("click", (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    const open = dd.classList.toggle("is-open");
-    btn.setAttribute("aria-expanded", open ? "true" : "false");
+    const btn = dd.querySelector(".nav-dropbtn");
+    const menu = dd.querySelector(".nav-dropmenu");
+
+    if (!btn || !menu) return;
+
+    const close = () => {
+      dd.classList.remove("is-open");
+      btn.setAttribute("aria-expanded", "false");
+    };
+
+    btn.addEventListener("click", (e) => {
+
+      e.preventDefault();
+      e.stopPropagation();
+
+      const open = dd.classList.toggle("is-open");
+
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
+
+    });
+
+    menu.addEventListener("click", e => e.stopPropagation());
+
+    document.addEventListener("click", e => {
+      if (!dd.contains(e.target)) close();
+    });
+
+    document.addEventListener("keydown", e => {
+      if (e.key === "Escape") close();
+    });
+
   });
 
-  menu.addEventListener("click", (e) => e.stopPropagation());
-
-  document.addEventListener("click", (e) => {
-    if (!dd.contains(e.target)) close();
-  });
-
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") close();
-  });
 })();
 
 /* ===============================
