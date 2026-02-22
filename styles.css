@@ -2106,27 +2106,28 @@ transform: rotate(-45deg) translateY(0px);
 
 }
 
-/* ONLY prevent wrapping on the right side text labels */
-.nav-right .nav-dropbtn{
-  white-space: nowrap;
+/* KEEP LEFT AND RIGHT ON ONE LINE */
+.top-nav-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:nowrap;   /* THIS STOPS WRAPPING */
 }
 
 
-/* BOOK FREE CONSULTATION BUTTON */
-.nav-right .nav-cta{
-  background:#4C3494;
-  color:#ffffff;
-  text-decoration:none;
-  padding:10px 18px;
-  border-radius:6px;
-  white-space: nowrap;
-  display:inline-block;
+/* KEEP LEFT SIDE ITEMS IN ONE ROW */
+.nav-left{
+  display:flex;
+  align-items:center;
+  gap:22px;           /* keep your existing spacing */
+  flex-wrap:nowrap;   /* prevents dropdown labels wrapping */
 }
 
 
-/* keep text white */
-.nav-right .nav-cta:hover,
-.nav-right .nav-cta:visited,
-.nav-right .nav-cta:active{
-  color:#ffffff;
+/* KEEP RIGHT SIDE ITEMS IN ONE ROW */
+.nav-right{
+  display:flex;
+  align-items:center;
+  gap:22px;
+  flex-wrap:nowrap;
 }
