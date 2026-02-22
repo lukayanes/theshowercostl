@@ -2147,27 +2147,6 @@ transform: rotate(-45deg) translateY(0px);
 }
 
 
-/* ALL RIGHT SIDE LINKS */
-.nav-right a,
-.nav-right .nav-dropbtn{
-  color:#ffffff;
-  text-decoration:none;
-  font-family:inherit;
-  font-size:15px;
-  letter-spacing:.04em;
-  white-space:nowrap;     /* prevents wrapping */
-}
-
-
-/* DROPDOWN BUTTON TEXT */
-.nav-dropbtn{
-  background:none;
-  border:none;
-  cursor:pointer;
-  padding:0;
-}
-
-
 /* CTA BUTTON */
 .nav-cta{
   background:#5b3fd6;
