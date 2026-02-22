@@ -2042,7 +2042,7 @@ select,
     align-items: center;
     justify-content: center;
     white-space: nowrap;
-    flex: 0 0 auto;
+    flex: 0 1 auto;
     padding: 10px 16px;
     border-radius: 10px;
     background: #4C3494;
@@ -2070,7 +2070,7 @@ select,
   z-index: 5;
 }
 
-.{
+.promo-corner{
   position: absolute;
   top: 24px;          /* higher */
   left: -70px;       /* less intrusive */
