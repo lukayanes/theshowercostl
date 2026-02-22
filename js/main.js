@@ -180,13 +180,4 @@ requestAnimationFrame(() => {
   });
 })();
 
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AQ.Ab8RN6K6gcaC_WXkAlXv64vH5u08YAde5iQo8HyttNjMymS9lw&libraries=places"></script>
-
-<script>
-new google.maps.places.Autocomplete(
-  document.getElementById("address-input"),
-  { types:["address"], componentRestrictions:{country:"us"}, fields:["formatted_address"] }
-);
-</script>
