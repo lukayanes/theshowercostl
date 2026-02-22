@@ -2001,3 +2001,76 @@ select,
   margin-top: 18px;
 }
 
+/* PROMOTION BADGE */
+
+.top-hero{
+  position:relative;
+}
+
+.promo-badge{
+
+position:absolute;
+top:40px;
+left:40px;
+
+background:#7c3aed;
+color:#fff;
+
+padding:18px 22px;
+
+border-radius:12px;
+
+box-shadow:0 15px 35px rgba(0,0,0,0.35);
+
+z-index:10;
+
+font-family:"Karla",sans-serif;
+
+}
+
+.promo-badge strong{
+
+display:block;
+font-size:22px;
+font-weight:700;
+
+}
+
+.promo-badge span{
+
+display:block;
+font-size:16px;
+margin-top:2px;
+
+}
+
+.promo-badge small{
+
+display:block;
+font-size:13px;
+margin-top:4px;
+opacity:.9;
+
+}
+
+
+/* mobile */
+
+@media(max-width:768px){
+
+.promo-badge{
+
+top:20px;
+left:20px;
+
+padding:14px 16px;
+
+}
+
+.promo-badge strong{
+
+font-size:18px;
+
+}
+
+}
