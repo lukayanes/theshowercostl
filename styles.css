@@ -2621,7 +2621,14 @@ html, body{
    MOBILE MENU FULL SCROLL FIX
 ========================================= */
 
+/* =========================================
+   MOBILE MENU — CORRECT FINAL VERSION
+========================================= */
+
+/* HIDDEN BY DEFAULT */
 .mobile-menu{
+
+  display: none;
 
   position: fixed;
 
@@ -2643,6 +2650,23 @@ html, body{
 
 }
 
+
+/* SHOW ONLY WHEN OPEN */
+.mobile-menu.open{
+
+  display: block;
+
+}
+
+
+/* INNER SCROLL AREA */
+.mobile-menu-inner{
+
+  padding: 20px;
+
+  padding-bottom: 80px;
+
+}
 
 /* CRITICAL: ensure inner can scroll fully */
 
