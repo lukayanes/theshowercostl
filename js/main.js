@@ -264,3 +264,18 @@ requestAnimationFrame(() => {
   });
 
 })();
+
+
+/* MOBILE DROPDOWN TOGGLES */
+
+document.querySelectorAll(".mm-toggle").forEach(btn => {
+
+  btn.addEventListener("click", () => {
+
+    const group = btn.parentElement;
+
+    group.classList.toggle("open");
+
+  });
+
+});
