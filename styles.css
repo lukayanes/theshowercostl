@@ -2825,3 +2825,47 @@ body.menu-open{
   overflow: hidden;
 
 }
+
+
+/* =========================================
+   SMALLER, COMPACT HAMBURGER
+========================================= */
+
+.hamburger{
+
+  width:36px;
+  height:36px;
+
+  padding:6px;
+
+}
+
+.hamburger span{
+
+  width:20px;
+  height:2px;
+
+  margin:4px 0;
+
+}
+
+
+/* Optional: even tighter on mobile */
+
+@media (max-width:768px){
+
+  .hamburger{
+
+    width:32px;
+    height:32px;
+
+  }
+
+  .hamburger span{
+
+    width:18px;
+    height:2px;
+
+  }
+
+}
