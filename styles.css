@@ -2987,3 +2987,73 @@ body.menu-open{
 .mm-group.open .mm-panel{
   display:block;
 }
+
+/* =========================================
+   MOBILE NAV — USE BRAND PURPLE
+========================================= */
+
+:root{
+  --brand-purple: #4c3494;
+}
+
+
+/* section titles */
+.mm-toggle{
+
+  color: var(--brand-purple);
+
+  background: transparent;
+
+}
+
+
+/* links inside dropdown */
+.mm-panel a{
+
+  color: var(--brand-purple);
+
+}
+
+
+/* CTA button */
+.mm-cta{
+
+  background: var(--brand-purple);
+
+  color: #fff;
+
+}
+
+
+/* caret icon */
+.mm-caret{
+
+  color: var(--brand-purple);
+
+}
+
+
+/* remove iPhone blue tap highlight */
+.mm-toggle,
+.mm-panel a{
+
+  -webkit-tap-highlight-color: transparent;
+
+}
+
+
+/* hover / tap state */
+.mm-toggle:active,
+.mm-panel a:active{
+
+  background: rgba(76,52,148,0.08);
+
+}
+
+
+/* optional: section divider line in purple tint */
+.mm-group{
+
+  border-bottom: 1px solid rgba(76,52,148,0.15);
+
+}
