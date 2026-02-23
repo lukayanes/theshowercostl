@@ -212,8 +212,14 @@ requestAnimationFrame(() => {
   hamburger.addEventListener("click", (e) => {
     e.preventDefault();
     e.stopPropagation();
-    setOpen(!mobileMenu.classList.contains("open"));
-  });
+
+   const setOpen = (open) => {
+
+  mobileMenu.classList.toggle("open", open);
+
+  document.body.classList.toggle("menu-open", open);
+
+};
 
   // close when clicking a link
   mobileMenu.querySelectorAll("a").forEach((link) => {
