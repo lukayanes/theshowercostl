@@ -2867,3 +2867,15 @@ display:flex;
     height: 78px;
   }
 }
+
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 900px) {
+
+  .mobile-menu {
+    display: block;
+  }
+
+}
