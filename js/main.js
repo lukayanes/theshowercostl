@@ -208,15 +208,27 @@ requestAnimationFrame(() => {
   /* THE REAL FUNCTION */
   const setOpen = (open) => {
 
-    mobileMenu.classList.toggle("open", open);
+  mobileMenu.classList.toggle("open", open);
 
-    hamburger.setAttribute("aria-expanded", open ? "true" : "false");
+  document.body.classList.toggle("menu-open", open);
 
-    mobileMenu.setAttribute("aria-hidden", open ? "false" : "true");
+  hamburger.setAttribute("aria-expanded", open ? "true" : "false");
 
-    document.body.classList.toggle("menu-open", open);
+  mobileMenu.setAttribute("aria-hidden", open ? "false" : "true");
 
-  };
+
+  /* THIS LINE CLOSES ALL SECTIONS WHEN MENU OPENS */
+  if (open){
+
+    document.querySelectorAll(".mm-group").forEach(group => {
+
+      group.classList.remove("open");
+
+    });
+
+  }
+
+};
 
 
   /* CLICK HAMBURGER */
