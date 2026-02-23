@@ -2767,3 +2767,17 @@ html, body{
   }
 
 }
+
+.hamburger span{
+
+  width:24px;
+
+  height:3px;
+
+  background:#4c3494;
+
+  display:block;
+
+  margin:5px 0;
+
+}
