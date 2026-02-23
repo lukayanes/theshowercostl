@@ -195,46 +195,72 @@ requestAnimationFrame(() => {
 })();
 
 /* =========================================
-   HAMBURGER MENU (FIXED + SAFE)
+   HAMBURGER MENU (CORRECT FINAL FIX)
 ========================================= */
 (() => {
+
   const hamburger = document.getElementById("hamburgerBtn");
   const mobileMenu = document.getElementById("mobileMenu");
 
   if (!hamburger || !mobileMenu) return;
 
+
+  /* THE REAL FUNCTION */
   const setOpen = (open) => {
+
     mobileMenu.classList.toggle("open", open);
+
     hamburger.setAttribute("aria-expanded", open ? "true" : "false");
+
     mobileMenu.setAttribute("aria-hidden", open ? "false" : "true");
+
+    document.body.classList.toggle("menu-open", open);
+
   };
 
+
+  /* CLICK HAMBURGER */
   hamburger.addEventListener("click", (e) => {
+
     e.preventDefault();
     e.stopPropagation();
 
-   const setOpen = (open) => {
+    setOpen(!mobileMenu.classList.contains("open"));
 
-  mobileMenu.classList.toggle("open", open);
+  });
 
-  document.body.classList.toggle("menu-open", open);
 
-};
-
-  // close when clicking a link
+  /* CLICK MENU LINK */
   mobileMenu.querySelectorAll("a").forEach((link) => {
+
     link.addEventListener("click", () => setOpen(false));
+
   });
 
-  // close when clicking outside
+
+  /* CLICK OUTSIDE */
   document.addEventListener("click", (e) => {
+
     if (!mobileMenu.classList.contains("open")) return;
-    if (mobileMenu.contains(e.target) || hamburger.contains(e.target)) return;
+
+    if (mobileMenu.contains(e.target)) return;
+
+    if (hamburger.contains(e.target)) return;
+
     setOpen(false);
+
   });
 
-  // close on escape
+
+  /* ESC KEY */
   document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") setOpen(false);
+
+    if (e.key === "Escape") {
+
+      setOpen(false);
+
+    }
+
   });
+
 })();
