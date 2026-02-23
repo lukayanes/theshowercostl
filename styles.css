@@ -2781,3 +2781,47 @@ html, body{
   margin:5px 0;
 
 }
+
+/* =========================================
+   MOBILE MENU — FIX SCROLL + CLICK
+========================================= */
+
+.mobile-menu{
+
+  position: fixed;
+
+  top: 120px; /* adjust to bottom of your nav */
+
+  left: 0;
+
+  width: 100%;
+
+  height: calc(100vh - 120px);
+
+  background: rgba(255,255,255,0.98);
+
+  overflow-y: auto;
+
+  -webkit-overflow-scrolling: touch;
+
+  z-index: 999999;
+
+}
+
+
+/* make inner container full height */
+
+.mobile-menu-inner{
+
+  padding: 20px;
+
+}
+
+
+/* prevent background scroll when menu open */
+
+body.menu-open{
+
+  overflow: hidden;
+
+}
