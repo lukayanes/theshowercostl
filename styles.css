@@ -2879,3 +2879,19 @@ display:flex;
   }
 
 }
+
+.mobile-menu {
+
+  position: fixed;
+
+  top: 120px; /* adjust to your header height */
+
+  left: 0;
+
+  width: 100%;
+
+  background: white;
+
+  z-index: 9999;
+
+}
