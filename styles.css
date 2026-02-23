@@ -966,8 +966,27 @@ height:320px;
 }
 
 @media (max-width: 900px){
-  .last-cta-grid{ grid-template-columns: 1fr; }
-  .last-cta-panel{ padding: 50px 22px; }
+
+  .last-cta-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .last-cta-photo{
+
+    height: 260px;              /* THIS fixes the slim image */
+
+    min-height: 260px;
+
+    background-position: center;
+
+  }
+
+  .last-cta-panel{
+
+    padding: 50px 22px;
+
+  }
+
 }
 
 
