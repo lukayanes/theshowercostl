@@ -280,13 +280,29 @@ requestAnimationFrame(() => {
 
 /* MOBILE DROPDOWN TOGGLES */
 
-document.querySelectorAll(".mm-toggle").forEach(btn => {
+document.querySelectorAll(".mm-toggle").forEach(button => {
 
-  btn.addEventListener("click", () => {
+  button.addEventListener("click", function(){
 
-    const group = btn.parentElement;
+    const group = this.parentElement;
 
-    group.classList.toggle("open");
+    const isOpen = group.classList.contains("open");
+
+
+    /* close all */
+    document.querySelectorAll(".mm-group").forEach(g => {
+
+      g.classList.remove("open");
+
+    });
+
+
+    /* open clicked */
+    if (!isOpen){
+
+      group.classList.add("open");
+
+    }
 
   });
 
