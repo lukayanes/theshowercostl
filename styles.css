@@ -2745,3 +2745,125 @@ display:flex;
 }
 
 }
+
+/* ===============================
+   HAMBURGER + MOBILE MENU (FIX)
+   =============================== */
+
+/* hamburger hidden by default (desktop) */
+.hamburger{
+  display:none;
+  width:44px;
+  height:44px;
+  border:0;
+  background:transparent;
+  cursor:pointer;
+  padding:10px;
+  border-radius:10px;
+}
+
+.hamburger span{
+  display:block;
+  height:2px;
+  margin:6px 0;
+  background: var(--purple);
+  border-radius:999px;
+}
+
+/* mobile menu container (overlay) - hidden by default */
+.mobile-menu{
+  display:none;               /* only enabled on mobile via media query */
+  position: fixed;
+  top: calc(var(--contact-bar-h) + 0px);
+  left: 0;
+  right: 0;
+  z-index: 9998;
+  background: rgba(255,255,255,0.96);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+
+  transform: translateY(-10px);
+  opacity: 0;
+  pointer-events: none;
+  transition: 180ms ease;
+}
+
+.mobile-menu.open{
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mobile-menu-inner{
+  padding: 14px 16px 18px;
+  display:grid;
+  gap: 10px;
+}
+
+.mm-link{
+  padding: 10px 10px;
+  border-radius: 10px;
+  font-family: "Unica One", system-ui;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: rgba(0,0,0,0.85);
+}
+
+.mm-link:active,
+.mm-link:hover{
+  background: rgba(76,52,148,0.08);
+}
+
+.mm-divider{
+  height: 1px;
+  background: rgba(0,0,0,0.10);
+  margin: 6px 0;
+}
+
+.mm-cta{
+  margin-top: 8px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: var(--purple);
+  color:#fff;
+  font-family: "Unica One", system-ui;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+/* MOBILE BEHAVIOR */
+@media (max-width: 900px){
+
+  /* show hamburger */
+  .hamburger{ display:inline-flex; align-items:center; justify-content:center; }
+
+  /* keep nav inner in one row */
+  .top-nav-inner{
+    display:flex !important;
+    align-items:center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  /* hide desktop link groups on mobile */
+  .nav-left,
+  .nav-right{
+    display:none !important;
+  }
+
+  /* show the mobile menu system on mobile */
+  .mobile-menu{
+    display:block;
+  }
+
+  /* logo sizing (tweak if needed) */
+  .nav-logo img{
+    height: 78px;
+  }
+}
