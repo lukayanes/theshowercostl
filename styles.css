@@ -2008,15 +2008,19 @@ select,
   justify-content:space-between;
 }
 
-/* columns */
 .footer-col{
-  flex:0 0 auto;
-  min-width:140px;
+
+  flex:1 1 0;     /* allows shrinking */
+
+  min-width:0;    /* CRITICAL FIX */
+
 }
 
-.footer-brand{ min-width:240px; }
-.footer-address{ min-width:260px; }
-.footer-locations{ min-width:180px; }  /* locations list is long */
+.footer-brand{ min-width:0; }
+
+.footer-address{ min-width:0; }
+
+.footer-locations{ min-width:0; }
 
 /* logo */
 .footer-logo{
