@@ -213,3 +213,13 @@ if (hamburger && mobileMenu){
   });
 
 }
+
+mobileMenu.querySelectorAll("a").forEach(link => {
+
+  link.addEventListener("click", () => {
+
+    mobileMenu.classList.remove("open");
+
+  });
+
+});
