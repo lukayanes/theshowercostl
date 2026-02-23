@@ -223,3 +223,13 @@ mobileMenu.querySelectorAll("a").forEach(link => {
   });
 
 });
+
+const hamburger = document.getElementById("hamburgerBtn");
+
+const nav = document.querySelector(".top-nav-inner");
+
+hamburger.onclick = () => {
+
+nav.classList.toggle("mobile-open");
+
+};
