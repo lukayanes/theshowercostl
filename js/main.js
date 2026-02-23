@@ -194,4 +194,22 @@ requestAnimationFrame(() => {
   });
 })();
 
+/* =========================================
+   HAMBURGER MENU
+========================================= */
 
+const hamburger =
+document.getElementById("hamburgerBtn");
+
+const mobileMenu =
+document.getElementById("mobileMenu");
+
+if (hamburger && mobileMenu){
+
+  hamburger.addEventListener("click", () => {
+
+    mobileMenu.classList.toggle("open");
+
+  });
+
+}
