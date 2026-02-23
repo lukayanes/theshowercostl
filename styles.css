@@ -2707,4 +2707,63 @@ html, body{
   }
 }
 
- 
+ /* =========================================
+   MOBILE NAV LAYOUT — LOGO LEFT, HAMBURGER RIGHT
+========================================= */
+
+@media (max-width:768px){
+
+  .top-nav-inner{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+  }
+
+
+  /* LOGO LEFT */
+  .nav-logo{
+
+    order:1;
+
+  }
+
+  .nav-logo img{
+
+    height:72px;
+
+  }
+
+
+  /* HAMBURGER RIGHT */
+  .hamburger{
+
+    display:flex !important;
+
+    align-items:center;
+
+    justify-content:center;
+
+    order:3;
+
+    width:44px;
+
+    height:44px;
+
+    z-index:100000;
+
+  }
+
+
+  /* hide desktop menu items */
+  .nav-left,
+  .nav-right{
+
+    display:none !important;
+
+  }
+
+}
