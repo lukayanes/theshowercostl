@@ -195,31 +195,40 @@ requestAnimationFrame(() => {
 })();
 
 /* =========================================
-   HAMBURGER MENU
+   HAMBURGER MENU (FIXED + SAFE)
 ========================================= */
+(() => {
+  const hamburger = document.getElementById("hamburgerBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
 
-const hamburger =
-document.getElementById("hamburgerBtn");
+  if (!hamburger || !mobileMenu) return;
 
-const mobileMenu =
-document.getElementById("mobileMenu");
+  const setOpen = (open) => {
+    mobileMenu.classList.toggle("open", open);
+    hamburger.setAttribute("aria-expanded", open ? "true" : "false");
+    mobileMenu.setAttribute("aria-hidden", open ? "false" : "true");
+  };
 
-if (hamburger && mobileMenu){
-
-  hamburger.addEventListener("click", () => {
-
-    mobileMenu.classList.toggle("open");
-
+  hamburger.addEventListener("click", (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setOpen(!mobileMenu.classList.contains("open"));
   });
 
-}
-
-mobileMenu.querySelectorAll("a").forEach(link => {
-
-  link.addEventListener("click", () => {
-
-    mobileMenu.classList.remove("open");
-
+  // close when clicking a link
+  mobileMenu.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => setOpen(false));
   });
 
-});
+  // close when clicking outside
+  document.addEventListener("click", (e) => {
+    if (!mobileMenu.classList.contains("open")) return;
+    if (mobileMenu.contains(e.target) || hamburger.contains(e.target)) return;
+    setOpen(false);
+  });
+
+  // close on escape
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") setOpen(false);
+  });
+})();
