@@ -2174,12 +2174,17 @@ padding:0;
 border-radius:0;
 
 }
-/* ===============================
-   RESPONSIVE: allow horizontal scroll on smaller screens
-================================ */
-@media (max-width: 1200px){
-  .site-footer{ overflow-x:auto; }
-  .footer-grid{ min-width: 1200px; }   /* keeps single row; scrolls instead */
+
+@media (max-width: 900px){
+
+  .footer-grid{
+    flex-wrap: wrap;
+  }
+
+  .footer-col{
+    width: 100%;
+  }
+
 }
 
 /* ===============================
