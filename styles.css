@@ -3101,12 +3101,3 @@ body.menu-open{
 }
 
 
-  .mobile-menu{
-
-    top: calc(var(--nav-h) + 44px);
-
-    height: calc(100vh - var(--nav-h) - 44px);
-
-  }
-
-}
