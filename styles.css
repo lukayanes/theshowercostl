@@ -2592,6 +2592,16 @@ html, body{
 
   }
 
+.mobile-cta a{
+
+  font-family:"Unica One", system-ui;
+
+  letter-spacing:1.5px;
+
+  text-transform:uppercase;
+
+}
+
 }
 
 @media (max-width:768px){
@@ -2606,4 +2616,76 @@ html, body{
     display: none !important;
   }
 
+/* =========================================
+   MOBILE NAV — CLEAN LAYOUT
+========================================= */
+@media (max-width:768px){
+
+  /* stack entire nav */
+  .top-nav-inner{
+
+    display:flex;
+    flex-direction:column;
+
+    align-items:center;
+
+    padding:12px 12px 16px;
+
+    gap:10px;
+
+  }
+
+  /* logo centered and sized properly */
+  .nav-logo{
+
+    order:1;
+
+    width:180px;
+
+    margin:6px auto;
+
+  }
+
+  .nav-logo img{
+    width:100%;
+    height:auto;
+  }
+
+  /* turn nav sections into clean grid */
+  .nav-left,
+  .nav-right{
+
+    width:100%;
+
+    display:grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap:6px 12px;
+
+    justify-items:center;
+
+  }
+
+  .nav-left{
+    order:2;
+  }
+
+  .nav-right{
+    order:3;
+  }
+
+  /* nav links */
+  .top-nav a,
+  .nav-dropbtn{
+
+    font-size:15px;
+
+    letter-spacing:1.5px;
+
+    padding:6px 0;
+
+  }
+
+}
 }
