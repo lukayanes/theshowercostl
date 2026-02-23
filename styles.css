@@ -2979,3 +2979,11 @@ body.menu-open{
   font-size:18px;
 
 }
+
+.mm-panel{
+  display:none;
+}
+
+.mm-group.open .mm-panel{
+  display:block;
+}
