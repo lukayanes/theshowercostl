@@ -2617,19 +2617,41 @@ html, body{
   border-radius:999px;
 }
 
-/* IMPORTANT: hide mobile menu on desktop */
+/* =========================================
+   MOBILE MENU FULL SCROLL FIX
+========================================= */
+
 .mobile-menu{
-  display:none;
-  position:absolute;       /* sit under the fixed nav */
-  top:100%;
-  left:0;
-  right:0;
-  background: rgba(255,255,255,0.96);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(0,0,0,0.08);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
-  z-index: 99999;
+
+  position: fixed;
+
+  top: var(--nav-h);
+
+  left: 0;
+
+  width: 100%;
+
+  height: calc(100vh - var(--nav-h));
+
+  overflow-y: auto;
+
+  -webkit-overflow-scrolling: touch;
+
+  background: rgba(255,255,255,0.98);
+
+  z-index: 999999;
+
+}
+
+
+/* CRITICAL: ensure inner can scroll fully */
+
+.mobile-menu-inner{
+
+  padding: 20px;
+
+  padding-bottom: 80px;
+
 }
 
 .mobile-menu.open{
