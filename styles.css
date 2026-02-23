@@ -3061,45 +3061,44 @@ body.menu-open{
 
 /* MOBILE PROMO BAR — USING YOUR REAL PROMO BLUE */
 
-.promo-mobile{
+
+.hero-promo{
   display:none;
 }
 
 @media (max-width:768px){
 
-  .promo-mobile{
+.hero-promo{
 
-    display:flex;
+  position: sticky;
 
-    position:fixed;
+  top: var(--nav-h);
 
-    top: var(--nav-h);
+  width:100%;
 
-    left:0;
+  height:44px;
 
-    width:100%;
+  background: var(--promo-blue);
 
-    height:44px;
+  color:#fff;
 
-    background: var(--promo-blue);  /* ← THIS IS YOUR BLUE */
+  display:flex;
 
-    color:#fff;
+  align-items:center;
 
-    align-items:center;
+  justify-content:center;
 
-    justify-content:center;
+  text-align:center;
 
-    text-align:center;
+  font-family:"Unica One", system-ui;
 
-    font-family:"Unica One", system-ui;
+  font-size:15px;
 
-    font-size:15px;
+  letter-spacing:.5px;
 
-    letter-spacing:.5px;
+  z-index:999;
 
-    z-index:999998;
-
-  }
+}
 
 
   .mobile-menu{
