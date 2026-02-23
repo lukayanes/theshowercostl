@@ -2680,3 +2680,49 @@ html, body{
   }
 
 }
+
+/* HAMBURGER hidden desktop */
+
+.hamburger{
+
+display:none;
+
+}
+
+
+
+@media (max-width:768px){
+
+
+
+.hamburger{
+
+display:block;
+
+}
+
+
+
+.nav-left,
+.nav-right{
+
+display:none;
+
+width:100%;
+
+}
+
+
+
+.mobile-open .nav-left,
+.mobile-open .nav-right{
+
+display:flex;
+
+flex-direction:column;
+
+}
+
+
+
+}
