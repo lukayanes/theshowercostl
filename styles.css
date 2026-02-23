@@ -2915,3 +2915,7 @@ body.menu-open{
   }
 
 }
+
+body.menu-open{
+  overflow: hidden;
+}
