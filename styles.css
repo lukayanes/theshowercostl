@@ -3172,3 +3172,25 @@ body.menu-open{
   }
 
 }
+
+/* MOBILE FOOTER FIX — restore vertical stacking */
+@media (max-width: 900px){
+
+  .footer-grid{
+
+    flex-direction: column;   /* stack columns vertically */
+
+  }
+
+  .footer-col,
+  .footer-brand,
+  .footer-address,
+  .footer-locations{
+
+    width: 100%;
+
+    min-width: 100%;          /* prevents text compression */
+
+  }
+
+}
