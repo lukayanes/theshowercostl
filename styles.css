@@ -3197,10 +3197,10 @@ body.menu-open{
 
 
 /* ===============================
-DESIGN TOOLS SECTION
+DESIGN TOOL SECTION
 ================================ */
 
-.design-tools{
+.design-tool-section{
 
 padding:70px 0;
 
@@ -3209,8 +3209,7 @@ background:#fff;
 }
 
 
-
-.design-tools-grid{
+.design-tool-grid{
 
 display:grid;
 
@@ -3223,72 +3222,24 @@ margin-top:40px;
 }
 
 
-
-/* CARD */
-
-.design-tool-card{
+.design-tool-item{
 
 text-decoration:none;
 
 display:block;
 
-transition:.25s;
-
 }
 
 
-
-.design-tool-title{
-
-background:var(--purple);
-
-color:#fff;
-
-font-weight:800;
-
-text-align:center;
-
-padding:14px;
-
-border-radius:4px;
-
-margin-bottom:12px;
-
-font-size:17px;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-gap:8px;
-
-transition:.25s;
-
-}
-
-
-
-.design-tool-external{
-
-font-size:15px;
-
-opacity:.8;
-
-}
-
-
-
-/* IMAGE */
-
-.design-tool-card img{
+.design-tool-image{
 
 width:100%;
 
 height:260px;
 
-object-fit:cover;
+background-size:cover;
+
+background-position:center;
 
 border-radius:4px;
 
@@ -3297,18 +3248,35 @@ transition:.3s;
 }
 
 
+.design-tool-button{
 
-/* HOVER */
+margin-top:12px;
 
-.design-tool-card:hover img{
+background:var(--purple);
+
+color:#fff;
+
+text-align:center;
+
+font-weight:800;
+
+padding:14px;
+
+border-radius:4px;
+
+transition:.25s;
+
+}
+
+
+.design-tool-item:hover .design-tool-image{
 
 transform:scale(1.03);
 
 }
 
 
-
-.design-tool-card:hover .design-tool-title{
+.design-tool-item:hover .design-tool-button{
 
 background:#37246e;
 
@@ -3320,14 +3288,14 @@ background:#37246e;
 
 @media(max-width:900px){
 
-.design-tools-grid{
+.design-tool-grid{
 
 grid-template-columns:1fr;
 
 }
 
 
-.design-tool-card img{
+.design-tool-image{
 
 height:220px;
 
