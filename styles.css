@@ -3254,3 +3254,9 @@ DESIGN TOOLS (3-COLUMN) — BULLETPROOF
   .dt3-grid{ grid-template-columns:1fr; }
   .dt3-media{ height:200px; }
 }
+
+.dt3-media{
+  height:240px !important;
+  min-height:240px !important;
+  max-height:240px !important;
+}
