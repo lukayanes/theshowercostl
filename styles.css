@@ -3282,3 +3282,15 @@ DESIGN TOOLS (3-COLUMN) — BULLETPROOF
 
   display:block;
 }
+
+/* FORCE DESIGN TOOL IMAGE SIZE */
+.dt3-media{
+  height:240px !important;
+  overflow:hidden !important;
+}
+
+.dt3-media img{
+  height:240px !important;
+  width:100% !important;
+  object-fit:cover !important;
+}
