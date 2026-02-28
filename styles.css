@@ -3280,3 +3280,19 @@ DESIGN TOOLS — REBUILT
   }
 
 }
+
+/* FORCE DESIGN TOOL IMAGE SIZE — FINAL FIX */
+
+.dt3-media{
+  height:240px !important;
+}
+
+.dt3-media img{
+
+  height:240px !important;
+
+  width:100% !important;
+
+  object-fit:cover !important;
+
+}
