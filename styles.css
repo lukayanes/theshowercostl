@@ -3260,3 +3260,22 @@ DESIGN TOOLS (3-COLUMN) — BULLETPROOF
   min-height:240px !important;
   max-height:240px !important;
 }
+
+.dt3-card{
+  display:flex;
+  flex-direction:column;
+  flex:0 0 auto;
+}
+
+.dt3-media{
+  height:240px;
+  flex:0 0 240px;
+  overflow:hidden;
+  border-radius:8px;
+}
+
+.dt3 .dt3-media img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
