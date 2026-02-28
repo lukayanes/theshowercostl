@@ -3196,10 +3196,10 @@ body.menu-open{
 }
 
 /* ===============================
-DESIGN TOOLS — FINAL (BULLETPROOF)
+DESIGN TOOLS — TRUE 3 COLUMN GRID
 ================================ */
 
-.dt-final{
+.design-tools{
 
   padding:70px 0;
 
@@ -3208,36 +3208,39 @@ DESIGN TOOLS — FINAL (BULLETPROOF)
 }
 
 
-.dt-final-row{
+.design-grid{
 
-  display:flex;
+  display:grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap:28px;
+
+  margin-top:40px;
+
+}
+
+
+.design-column img{
 
   width:100%;
 
-}
+  height:260px;
 
+  object-fit:cover;
 
-.dt-final-card{
+  display:block;
 
-  flex:1;
-
-  text-decoration:none;
-
-}
-
-
-.dt-final-image{
-
-  height:280px;
-
-  background-size:cover;
-
-  background-position:center;
+  border-radius:8px;
 
 }
 
 
-.dt-final-label{
+.design-button{
+
+  display:block;
+
+  margin-top:12px;
 
   background:#4C3494;
 
@@ -3245,13 +3248,22 @@ DESIGN TOOLS — FINAL (BULLETPROOF)
 
   text-align:center;
 
-  padding:16px;
+  padding:14px;
+
+  text-decoration:none;
 
   font-family:"Unica One";
 
-  font-size:22px;
+  font-size:20px;
 
-  letter-spacing:1px;
+  border-radius:8px;
+
+}
+
+
+.design-button:hover{
+
+  background:#37246e;
 
 }
 
@@ -3260,15 +3272,9 @@ DESIGN TOOLS — FINAL (BULLETPROOF)
 
 @media(max-width:900px){
 
-  .dt-final-row{
+  .design-grid{
 
-    flex-direction:column;
-
-  }
-
-  .dt-final-image{
-
-    height:220px;
+    grid-template-columns:1fr;
 
   }
 
