@@ -3268,3 +3268,7 @@ body.menu-open{
     height: 240px;
   }
 }
+
+.top-hero .hero-overlay{
+  padding-top: 44px;
+}
