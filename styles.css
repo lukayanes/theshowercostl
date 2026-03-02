@@ -3269,6 +3269,8 @@ body.menu-open{
   }
 }
 
-.top-hero .hero-overlay{
-  padding-top: 44px;
+@media (min-width: 769px){
+  .top-hero .hero-content{
+    margin-top: 44px;
+  }
 }
