@@ -3196,143 +3196,67 @@ body.menu-open{
 }
 
 /* ===============================
-DESIGN TOOLS — TRUE 3 COLUMN GRID
+   DESIGN TOOLS — CLEAN FINAL
 ================================ */
 
 .design-tools{
-
-  padding:70px 0;
-
-  background:#ffffff;
-
+  padding: 70px 0;
+  background: #ffffff;
 }
 
-
-.design-grid{
-
-  display:grid;
-
-  grid-template-columns: repeat(3, 1fr);
-
-  gap:28px;
-
-  margin-top:40px;
-
-}
-
-
-.design-column img{
-
-  width:100%;
-
-  height:260px;
-
-  object-fit:cover;
-
-  display:block;
-
-  border-radius:8px;
-
-}
-
-
-.design-button{
-
-  display:block;
-
-  margin-top:12px;
-
-  background:#4C3494;
-
-  color:#ffffff;
-
-  text-align:center;
-
-  padding:14px;
-
-  text-decoration:none;
-
-  font-family:"Unica One";
-
-  font-size:20px;
-
-  border-radius:8px;
-
-}
-
-
-.design-button:hover{
-
-  background:#37246e;
-
-}
-
-
-/* MOBILE */
-
-@media(max-width:900px){
-
-  .design-grid{
-
-    grid-template-columns:1fr;
-
-  }
-
-}
-
-/* ===============================
-   DESIGN TOOLS — DESKTOP FIX
-================================ */
-
-.design-grid{
+/* GRID LAYOUT */
+.design-tools .design-grid{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
+  margin-top: 40px;
 }
 
-.design-column{
-  max-width: 360px;   /* HARD LIMIT */
-  margin: 0 auto;     /* centers each column */
+/* COLUMN */
+.design-tools .design-column{
+  max-width: 360px;
+  margin: 0 auto;
 }
 
-.design-column img{
-  width: 100%;
-  height: 240px;      /* LOCK HEIGHT */
-  object-fit: cover;
-  display: block;
-  border-radius: 8px;
-}
-
-/* ===============================
-   DESIGN TOOLS — ACTUAL DESKTOP FIX
-================================ */
-
-.design-grid{
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  align-items: flex-start;
-}
-
-.design-column{
-  width: 320px;       /* HARD WIDTH */
-  flex: 0 0 320px;    /* PREVENT FLEX STRETCHING */
-}
-
-.design-column img{
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  display: block;
-  border-radius: 8px;
-}
-
-
-/* DESKTOP DESIGN TOOL IMAGE CONTROL */
-.design-column img{
+/* IMAGE — HIGH SPECIFICITY TO WIN CASCADE */
+.design-tools .design-column > a > img{
   width: 100%;
   height: 260px;
   object-fit: cover;
   display: block;
   border-radius: 8px;
+}
+
+/* BUTTON */
+.design-tools .design-button{
+  display: block;
+  margin-top: 14px;
+  background: #4C3494;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-family: "Unica One", system-ui;
+  font-size: 20px;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+.design-tools .design-button:hover{
+  background: #37246e;
+}
+
+/* MOBILE */
+@media (max-width: 900px){
+  .design-tools .design-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .design-tools .design-column{
+    max-width: 100%;
+  }
+
+  .design-tools .design-column > a > img{
+    height: 240px;
+  }
 }
