@@ -3233,13 +3233,19 @@ body.menu-open{
 .design-tools .design-button{
   display: block;
   margin-top: 14px;
-  background: #4C3494;
+
+  background: var(--purple);
   color: #ffffff;
+
   text-align: center;
   padding: 14px;
+
   text-decoration: none;
+
   font-family: "Unica One", system-ui;
-  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
   border-radius: 8px;
   transition: background 0.2s ease;
 }
