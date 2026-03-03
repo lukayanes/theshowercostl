@@ -3281,7 +3281,7 @@ body.menu-open{
 }
 
 
-.mm-row{
+.mm-toprow{
   display:flex;
   align-items:center;
   justify-content:space-between;
@@ -3295,7 +3295,7 @@ body.menu-open{
   padding: 14px 0;
   color: var(--brand-purple);
   background: transparent;
-  text-decoration: none;
+  text-decoration:none;
   font: inherit;
   font-weight: 800;
   letter-spacing: .6px;
@@ -3305,17 +3305,12 @@ body.menu-open{
 }
 
 .mm-caretbtn{
-  flex: 0 0 auto;
-  padding: 14px 6px;
+  flex:0 0 auto;
+  padding: 14px 0;
   border: 0;
   background: transparent;
   color: var(--brand-purple);
   display:flex;
   align-items:center;
   justify-content:center;
-}
-
-.mm-caretbtn .mm-caret{
-  font-size: 16px;
-  line-height: 1;
 }
