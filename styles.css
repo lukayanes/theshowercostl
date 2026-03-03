@@ -3281,36 +3281,3 @@ body.menu-open{
 }
 
 
-.mm-toprow{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:12px;
-  width:100%;
-}
-
-.mm-titlelink{
-  flex:1;
-  display:block;
-  padding: 14px 0;
-  color: var(--brand-purple);
-  background: transparent;
-  text-decoration:none;
-  font: inherit;
-  font-weight: 800;
-  letter-spacing: .6px;
-  text-transform: uppercase;
-  font-size: 15px;
-  line-height: 1;
-}
-
-.mm-caretbtn{
-  flex:0 0 auto;
-  padding: 14px 0;
-  border: 0;
-  background: transparent;
-  color: var(--brand-purple);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
