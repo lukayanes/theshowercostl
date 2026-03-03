@@ -3281,3 +3281,23 @@ body.menu-open{
 }
 
 
+.mm-head{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.mm-link{
+  flex:1;
+  display:block;
+  padding: 14px 0;
+  color: var(--brand-purple);
+  background: transparent;
+  text-decoration:none;
+  font: inherit;
+}
+
+.mm-toggle{
+  color: var(--brand-purple);
+  background: transparent;
+}
