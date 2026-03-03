@@ -3274,3 +3274,8 @@ body.menu-open{
     margin-top: 44px;
   }
 }
+
+.location-map{
+  background:#f6f7f4;
+  padding:110px 0 0 0;  /* was 70px */
+}
