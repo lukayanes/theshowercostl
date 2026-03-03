@@ -3281,23 +3281,41 @@ body.menu-open{
 }
 
 
-.mm-head{
+.mm-row{
   display:flex;
   align-items:center;
-  gap:10px;
+  justify-content:space-between;
+  gap:12px;
+  width:100%;
 }
 
-.mm-link{
+.mm-titlelink{
   flex:1;
   display:block;
   padding: 14px 0;
   color: var(--brand-purple);
   background: transparent;
-  text-decoration:none;
+  text-decoration: none;
   font: inherit;
+  font-weight: 800;
+  letter-spacing: .6px;
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 1;
 }
 
-.mm-toggle{
-  color: var(--brand-purple);
+.mm-caretbtn{
+  flex: 0 0 auto;
+  padding: 14px 6px;
+  border: 0;
   background: transparent;
+  color: var(--brand-purple);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.mm-caretbtn .mm-caret{
+  font-size: 16px;
+  line-height: 1;
 }
