@@ -3448,3 +3448,20 @@ margin-top:12px;
 color:#444;
 line-height:1.6;
 }
+
+
+/* fix overflow only for the what-to-expect section */
+
+.what-expect .difference-grid{
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+  width:100%;
+}
+
+.what-expect .difference-image img{
+  width:100%;
+  max-width:100%;
+  height:auto;
+  display:block;
+}
