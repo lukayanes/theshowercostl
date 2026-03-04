@@ -3465,3 +3465,14 @@ line-height:1.6;
   height:auto;
   display:block;
 }
+
+
+.what-expect .difference-body{
+  font-size:15px;
+  line-height:1.6;
+}
+
+.what-expect .difference-image{
+  display:flex;
+  align-items:center;
+}
