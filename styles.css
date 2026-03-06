@@ -3476,3 +3476,15 @@ line-height:1.6;
   display:flex;
   align-items:center;
 }
+
+
+/* NAV HOVER COLOR */
+
+.nav-dropbtn:hover{
+  color: var(--purple);
+}
+
+/* also change caret arrow */
+.nav-dropbtn:hover .nav-caret{
+  color: var(--purple);
+}
