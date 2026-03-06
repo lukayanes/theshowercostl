@@ -3488,3 +3488,20 @@ line-height:1.6;
 .nav-dropbtn:hover .nav-caret{
   color: var(--purple);
 }
+
+/* NAV LINK HOVER COLOR */
+
+.nav-dropbtn:hover,
+.nav-dropdown a.nav-dropbtn:hover{
+  color: var(--purple);
+}
+
+/* caret arrow */
+.nav-dropbtn:hover .nav-caret{
+  color: var(--purple);
+}
+
+/* smooth transition */
+.nav-dropbtn{
+  transition: color .25s ease;
+}
