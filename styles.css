@@ -3571,25 +3571,31 @@ line-height:1.6;
 
 
 /* ===============================
-WHAT TO EXPECT — MOBILE FIX
+WHAT TO EXPECT — MOBILE ORDER FIX
+image below text
 ================================ */
 
-@media (max-width: 768px){
+@media (max-width:768px){
 
   .difference-grid{
-    display:block;
+    display:flex;
+    flex-direction:column;
+  }
+
+  .difference-text{
+    order:1;
   }
 
   .difference-image{
-    width:100%;
-    margin-bottom:28px;
+    order:2;
+    margin-top:24px;
   }
 
   .difference-image img{
     width:100%;
     height:auto;
     display:block;
-    border-radius:6px;
+    border-radius:8px;
   }
 
 }
