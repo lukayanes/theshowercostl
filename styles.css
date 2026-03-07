@@ -3568,3 +3568,28 @@ line-height:1.6;
 .award-wide{
   max-width:600px;
 }
+
+
+/* ===============================
+WHAT TO EXPECT — MOBILE FIX
+================================ */
+
+@media (max-width: 768px){
+
+  .difference-grid{
+    display:block;
+  }
+
+  .difference-image{
+    width:100%;
+    margin-bottom:28px;
+  }
+
+  .difference-image img{
+    width:100%;
+    height:auto;
+    display:block;
+    border-radius:6px;
+  }
+
+}
