@@ -3505,3 +3505,56 @@ line-height:1.6;
 .nav-dropbtn{
   transition: color .25s ease;
 }
+
+
+/* CERTIFICATIONS GRID */
+
+.cert-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:34px;
+  align-items:center;
+  justify-items:center;
+}
+
+.cert-logo{
+  text-align:center;
+  text-decoration:none;
+}
+
+.cert-logo img{
+  max-width:160px;
+  height:auto;
+  transition:all .25s ease;
+  opacity:.95;
+}
+
+.cert-logo:hover img{
+  transform:scale(1.06);
+}
+
+.cert-name{
+  display:block;
+  margin-top:12px;
+  font-size:14px;
+  color:#444;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+  .cert-grid{
+    grid-template-columns:repeat(2,1fr);
+    margin-top:30px;
+  }
+
+}
+
+@media(max-width:520px){
+
+  .cert-grid{
+    grid-template-columns:1fr;
+  }
+
+}
