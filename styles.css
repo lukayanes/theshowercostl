@@ -3599,3 +3599,16 @@ image below text
   }
 
 }
+
+
+.award-more{
+  display:inline-block;
+  margin-top:12px;
+  font-weight:600;
+  color:var(--brand-purple);
+  text-decoration:none;
+}
+
+.award-more:hover{
+  text-decoration:underline;
+}
